@@ -1,0 +1,17 @@
+
+#pic{
+    width: 400px;
+    height: 300px;
+    padding: 7px 10px;
+}
+
+#text{
+    width: 500px;
+    height: 300px;
+    -webkit-box-shadow: inset 1px 1px 1px 0px dodgerblue;
+    font-size: 15px;
+    font-family: tahoma;
+    padding: 7px 10px;
+    margin: 10px;
+    border: 1px solid #aaa;
+}
