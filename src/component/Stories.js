@@ -1,29 +1,26 @@
 import React from 'react'
 import './style/stories.css'
-import Image from 'react-image'
-import Text from 'react-text'
-import { Form, TextArea,Button, Comment,Header } from 'semantic-ui-react'
-
+import {Form, TextArea, Button, Comment, Header} from 'semantic-ui-react'
+import farsiText from '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_AF.txt'
+import img from '../images/Illustrationer/2.jpg';
 
 export default class Stories extends React.Component {
     constructor(props) {
         super(props);
-
         this.state = {
             text: ""
         };
     }
     componentDidMount() {
-        this.readTextFile(this.props.txt);
+        this.readTextFile(farsiText);
     }
-
-    readTextFile = file => {
-        var rawFile = new XMLHttpRequest();
-        rawFile.open("GET", "Files/TLFTSpanish.txt", false);
+    readTextFile = input => {
+        const rawFile = new XMLHttpRequest();
+        rawFile.open("GET", input, false);
         rawFile.onreadystatechange = () => {
             if (rawFile.readyState === 4) {
                 if (rawFile.status === 200 || rawFile.status == 0) {
-                    var allText = rawFile.responseText;
+                    const allText = rawFile.responseText;
                     this.setState({
                         text: allText
                     });
@@ -32,59 +29,23 @@ export default class Stories extends React.Component {
         };
         rawFile.send(null);
     };
+
     render() {
-
-        return <div>
-
+        return (
             <div>
-
-                <div className="card-header border-0 float-left" >
-                    <img id="pic" src={require('../images/Illustrationer/1.jpg')} alt="image"></img>
+                <div className="card-header border-0 float-left">
+                    <img id="pic" src={img} alt="image"></img>
                 </div>
-                <div>
                 <Form>
-                    <TextArea id="text">
-                        tt detKATTÖGATS GODNATTSAGOR
-                        I SAMBAND MED CATS-EYES ARMBAND
-                        Dessa är några skri är konstigt med en historia som börjar så här men det här är av resande typ.
-                        Den hade knD MED CATS-EYES ARMBAND
-                        Dessa är några skriftliga berättelser och anpassningar av inspirerande berättelser hämtade från Internet och valda för att matcha varje pärla i armbandet.
-                        Av Nik Dee  2014-07-12appt avslutat meningen, bet si KATTÖGATS GODNATTSAGOR
-                        I SAMBAND MED D MED CATS-EYES ARMBAND
-                        Dessa är några skriftliga berättelser och anpassningar av inspirerande berättelser hämtade från Internet och valda för att matcha varje pärla i armbandet.
-                        Av Nik Dee  2014-07-12CATS-EYES ARMBAND
-                        Dessa är några skriftliga berättelser och anpassningar av inspirerande berättelser hämtade från Internet och valda för att matcha varje pärla i armbandet.
-                        Av Nik Dee  2014-07-12D MED CATS-EYES ARMBAND
-                        Dessa är några skriftliga berättelser och anpassningar av inspirerande berättelser hämtade från Internet och valda för att matcha varje pärla i armbandet.
-                        Av Nik Dee  2014-07-12.
-
-                    </TextArea>
+                    <TextArea id="text" value={this.state.text}/>
                 </Form>
-
-                </div>
-               {/* <div className="card-block px-2">
-                    <h4 className="card-title">Title</h4>
-                    <p className="card-text">
-*/}
-
-                    {/*</p>*/}
-
-
                 <div>
                     <a href="#" className="btn btn-primary">BUTTON</a>
                 </div>
-
-            </div>
-                <div className="w-100"></div>
-
-
                 <div className="card-footer w-100 text-muted">
                     FOOTER
                 </div>
             </div>
-/*
-        </div>
-*/
+        )
     }
-
 }

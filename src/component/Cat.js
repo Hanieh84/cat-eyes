@@ -1,21 +1,16 @@
 import React from 'react'
 import './style/catstyle.css'
-import {Link} from 'react-router-dom';
-import Text from 'react-text'
 import './style/cat_style.scss'
-
 
 export default class Cat extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             cssButtonColor: ["btn btn-primary", "btn btn-secondary"]
         }
-        console.log({props})
     }
 
     render() {
-
         return (
             <div>
                 <button id="btn" type="button"
@@ -75,12 +70,12 @@ export default class Cat extends React.Component {
             </ul>
         </form>*/
     }
-
+/*
     handleCreate(event) {
         event.preventDefault();
 
         const input = this.refs.inputName;
         const task = input.value;
 
-    }
+    }*/
 }
