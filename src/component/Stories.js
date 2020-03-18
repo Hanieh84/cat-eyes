@@ -3,6 +3,7 @@ import './style/stories.css'
 import {Form, TextArea, Button, Comment, Header} from 'semantic-ui-react'
 import farsiText from '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_AF.txt'
 import img from '../images/Illustrationer/2.jpg';
+import {stories_IR, stories_SE} from "./data/Stories_List";
 
 export default class Stories extends React.Component {
     constructor(props) {
@@ -12,7 +13,13 @@ export default class Stories extends React.Component {
         };
     }
     componentDidMount() {
+       const name = this.props.storiesName;
+       this.getStoriesName(name)
         this.readTextFile(farsiText);
+    }
+    getStoriesName(name){
+        console.log(name)
+
     }
     readTextFile = input => {
         const rawFile = new XMLHttpRequest();

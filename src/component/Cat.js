@@ -1,6 +1,7 @@
 import React from 'react'
 import './style/catstyle.css'
 import './style/cat_style.scss'
+import {Link} from "react-router-dom";
 
 export default class Cat extends React.Component {
     constructor(props) {
@@ -10,16 +11,29 @@ export default class Cat extends React.Component {
         }
     }
 
+
+    handleCreate(e, id) {
+        this.props.actionButton(id)
+    };
+
+
     render() {
         return (
             <div>
-                <button id="btn" type="button"
-                        className={this.state.cssButtonColor[0]}
+                <Link to="/Stories">
+                <button id="btn" className={this.state.cssButtonColor[0]}
+                        onClick={(e) => this.handleCreate(e, this.props.name)}
                 >{this.props.name}</button>
+                </Link>
             </div>
         )
 
 
+
+       /*     <Link to="/Cat">
+            <button className="img-btn">Enter</button>
+    </Link>
+*/
         /*return <form onSubmit={this.handleCreate.bind(this) }>
             <ul className='circle-container'>
                 <li>
@@ -70,12 +84,5 @@ export default class Cat extends React.Component {
             </ul>
         </form>*/
     }
-/*
-    handleCreate(event) {
-        event.preventDefault();
 
-        const input = this.refs.inputName;
-        const task = input.value;
-
-    }*/
 }
