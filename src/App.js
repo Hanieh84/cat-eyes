@@ -1,5 +1,4 @@
 import React from 'react';
-import Header from 'react-dom';
 import {Route, Switch} from "react-router";
 import Home from './component/Home.js';
 import Cat from './component/Cat';
@@ -8,10 +7,10 @@ import Menu from "./component/Menu";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter} from "react-router-dom";
 import {
-    stories_GB, stories_IR, stories_SE, stories_SO,
+    stories_EN, stories_FA, stories_SE, stories_SO,
     stories_ES, stories_JP, stories_DE, stories_FR, stories_CN,
     stories_UAE, stories_IN, stories_RU, stories_AF,
-    stories_ET
+    stories_TI
 } from './component/data/Stories_List';
 
 
@@ -27,7 +26,7 @@ export default class App extends React.Component {
 
     componentDidMount(id) {
         this.setState({
-            stories: stories_GB
+            stories: stories_EN
         });
     }
 
@@ -72,7 +71,7 @@ export default class App extends React.Component {
                 <BrowserRouter>
                     <div className="container">
                         <Menu
-                            onClickFlagCountry={this.handleClickEvent.bind(this)}
+                            onClickFlagCountry={this.onClickFlagCountry.bind(this)}
                         />
 
                         <Switch>
@@ -89,7 +88,7 @@ export default class App extends React.Component {
         )
     }
 
-    handleClickEvent(id) {
+    onClickFlagCountry(id) {
         switch (id) {
             case "SE":
                 this.setState({
@@ -98,12 +97,12 @@ export default class App extends React.Component {
                 break;
             case "IR":
                 this.setState({
-                    stories: stories_IR
+                    stories: stories_FA
                 });
                 break;
             case "GB":
                 this.setState({
-                    stories: stories_GB
+                    stories: stories_EN
                 });
                 break;
             case "SO":
@@ -158,7 +157,7 @@ export default class App extends React.Component {
                 break;
             case "ET":
                 this.setState({
-                    stories: stories_ET
+                    stories: stories_TI
                 });
                 break;
             default:

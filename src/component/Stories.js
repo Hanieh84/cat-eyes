@@ -1,26 +1,30 @@
 import React from 'react'
 import './style/stories.css'
-import {Form, TextArea, Button, Comment, Header} from 'semantic-ui-react'
+import {Form, TextArea} from 'semantic-ui-react'
 import farsiText from '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_AF.txt'
 import img from '../images/Illustrationer/2.jpg';
-import {stories_IR, stories_SE} from "./data/Stories_List";
+import Text_list from "./data/Text_list";
+
 
 export default class Stories extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            text: ""
+            text: "",
+            stories_list: {},
+            //nameObj: {}
         };
     }
-    componentDidMount() {
-       const name = this.props.storiesName;
-       this.getStoriesName(name)
-        this.readTextFile(farsiText);
-    }
-    getStoriesName(name){
-        console.log(name)
 
+    componentDidMount() {
+        const name = this.props.storiesName;
+        this.getStoriesName(name);
     }
+
+    setObjectToState(obj) {
+        this.state.stories_list = obj
+    }
+
     readTextFile = input => {
         const rawFile = new XMLHttpRequest();
         rawFile.open("GET", input, false);
@@ -52,7 +56,36 @@ export default class Stories extends React.Component {
                 <div className="card-footer w-100 text-muted">
                     FOOTER
                 </div>
+                <Text_list
+                    allStories={this.state.stories_list}
+                    nameObj={this.setObjectToState.bind(this)}
+                />
             </div>
         )
     }
+
+    getStoriesName(name) {
+        let list = this.state.stories_list;
+
+            if (list.hasOwnProperty(name)){
+                this.readTextFile(list[name]);
+                console.log( list[name])
+
+            }
+
+
+        /*
+                for (const [index, value] of this.state.stories_list.entries()) {
+        */
+        //console.log(value)
+
+        /* const stories_list=[]
+         for (const value of stories_list) {
+             console.log(value);
+
+
+         }*/
+
+    }
 }
+

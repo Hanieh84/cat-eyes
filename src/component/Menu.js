@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from "react-router-dom";
 import "./style/menu.css";
 
 export default class Menu extends React.Component {
@@ -11,7 +10,7 @@ export default class Menu extends React.Component {
         this.props.onClickFlagCountry(id);
     };
 
-    render() {
+    render(){
 
         const {flag, code, name, countries} = require('country-emoji');
         return (
