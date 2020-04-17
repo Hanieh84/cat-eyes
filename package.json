@@ -23,6 +23,7 @@
     "react-bootstrap-dropdown-menu": "^1.1.15",
     "react-country-flag": "^2.0.1",
     "react-dom": "^16.13.0",
+    "react-file-viewer": "^0.5.0",
     "react-flag-icon-css": "^1.0.25",
     "react-flags": "^0.1.18",
     "react-image": "^2.4.0",

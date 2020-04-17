@@ -1,145 +1,158 @@
 import React from 'react'
-
-const CONNECTED_TO_CATS_EYES_BRACELET_AF = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_AF.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_CN = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_CN.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_DE = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_DE.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_EN = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_EN.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_ES = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_ES.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_FA = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_FA.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_FR = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_FR.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_IN = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_IN.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_JP = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_JP.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_RU = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_RU.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_SE = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_SE.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_SO = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_SO.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_TI = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_TI.txt'
-const CONNECTED_TO_CATS_EYES_BRACELET_UAE = '../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_UAE.txt'
-const The_inner_voice_AF = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_AF.txt'
-const The_inner_voice_CN = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_CN.txt'
-const The_inner_voice_DE = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_DE.txt'
-const The_inner_voice_EN = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_EN.txt'
-const The_inner_voice_ES = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_ES.txt'
-const The_inner_voice_FA = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_FA.txt'
-const The_inner_voice_FR = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_FR.txt'
-const The_inner_voice_IN = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_IN.txt'
-const The_inner_voice_JP = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_JP.txt'
-const The_inner_voice_RU = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_RU.txt'
-const The_inner_voice_SE = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_SE.txt'
-const The_inner_voice_SO = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_SO.txt'
-const The_inner_voice_TI = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_TI.txt'
-const The_inner_voice_UAE = '../Files/CATS EYES BEDTIME STORIES/2_The inner voice_UAE.txt'
-const Heaven_and_hell_AF = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_AF.txt'
-const Heaven_and_hell_CN = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_CN.txt'
-const Heaven_and_hell_DE = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_DE.txt'
-const Heaven_and_hell_EN = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_EN.txt'
-const Heaven_and_hell_ES = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_ES.txt'
-const Heaven_and_hell_FA = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_FA.txt'
-const Heaven_and_hell_FR = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_FR.txt'
-const Heaven_and_hell_IN = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_IN.txt'
-const Heaven_and_hell_JP = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_JP.txt'
-const Heaven_and_hell_RU = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_RU.txt'
-const Heaven_and_hell_SE = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_SE.txt'
-const Heaven_and_hell_SO = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_SO.txt'
-const Heaven_and_hell_TI = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_TI.txt'
-const Heaven_and_hell_UAE = '../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_UAE.txt'
-const Standing_up_on_the_inside_AF = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_AF.txt'
-const Standing_up_on_the_inside_CN = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_CN.txt'
-const Standing_up_on_the_inside_DE = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_DE.txt'
-const Standing_up_on_the_inside_EN = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_EN.txt'
-const Standing_up_on_the_inside_ES = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_ES.txt'
-const Standing_up_on_the_inside_FA = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_FA.txt'
-const Standing_up_on_the_inside_FR = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_FR.txt'
-const Standing_up_on_the_inside_IN = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_IN.txt'
-const Standing_up_on_the_inside_JP = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_JP.txt'
-const Standing_up_on_the_inside_RU = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_RU.txt'
-const Standing_up_on_the_inside_SE = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_SE.txt'
-const Standing_up_on_the_inside_SO = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_SO.txt'
-const Standing_up_on_the_inside_TI = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_TI.txt'
-const Standing_up_on_the_inside_UAE = '../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_UAE.txt'
-const The_Cracked_pot_AF = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_AF.txt'
-const The_Cracked_pot_CN = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_CN.txt'
-const The_Cracked_pot_DE = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_DE.txt'
-const The_Cracked_pot_EN = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_EN.txt'
-const The_Cracked_pot_ES = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_ES.txt'
-const The_Cracked_pot_FA = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_FA.txt'
-const The_Cracked_pot_FR = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_FR.txt'
-const The_Cracked_pot_IN = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_IN.txt'
-const The_Cracked_pot_JP = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_JP.txt'
-const The_Cracked_pot_RU = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_RU.txt'
-const The_Cracked_pot_SE = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_SE.txt'
-const The_Cracked_pot_SO = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_SO.txt'
-const The_Cracked_pot_TI = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_TI.txt'
-const The_Cracked_pot_UAE = '../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_UAE.txt'
-const School_of_the_animals_AF = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_AF.txt'
-const School_of_the_animals_CN = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_CN.txt'
-const School_of_the_animals_DE = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_DE.txt'
-const School_of_the_animals_EN = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_EN.txt'
-const School_of_the_animals_ES = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_ES.txt'
-const School_of_the_animals_FA = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_FA.txt'
-const School_of_the_animals_FR = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_FR.txt'
-const School_of_the_animals_IN = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_IN.txt'
-const School_of_the_animals_JP = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_JP.txt'
-const School_of_the_animals_RU = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_RU.txt'
-const School_of_the_animals_SE = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_SE.txt'
-const School_of_the_animals_SO = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_SO.txt'
-const School_of_the_animals_TI = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_TI.txt'
-const School_of_the_animals_UAE = '../Files/CATS EYES BEDTIME STORIES/6_School of the animals_UAE.txt'
-const Peace_of_mind_AF = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_AF.txt'
-const Peace_of_mind_CN = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_CN.txt'
-const Peace_of_mind_DE = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_DE.txt'
-const Peace_of_mind_EN = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_EN.txt'
-const Peace_of_mind_ES = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_ES.txt'
-const Peace_of_mind_FA = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_FA.txt'
-const Peace_of_mind_FR = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_FR.txt'
-const Peace_of_mind_IN = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_IN.txt'
-const Peace_of_mind_JP = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_JP.txt'
-const Peace_of_mind_RU = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_RU.txt'
-const Peace_of_mind_SE = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_SE.txt'
-const Peace_of_mind_SO = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_SO.txt'
-const Peace_of_mind_TI = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_TI.txt'
-const Peace_of_mind_UAE = '../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_UAE.txt'
-const The_final_lesson_AF = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_AF.txt'
-const The_final_lesson_CN = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_CN.txt'
-const The_final_lesson_DE = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_DE.txt'
-const The_final_lesson_EN = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_EN.txt'
-const The_final_lesson_ES = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_ES.txt'
-const The_final_lesson_FA = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_FA.txt'
-const The_final_lesson_FR = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_FR.txt'
-const The_final_lesson_IN = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_IN.txt'
-const The_final_lesson_JP = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_JP.txt'
-const The_final_lesson_RU = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_RU.txt'
-const The_final_lesson_SE = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_SE.txt'
-const The_final_lesson_SO = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_SO.txt'
-const The_final_lesson_TI = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_TI.txt'
-const The_final_lesson_UAE = '../Files/CATS EYES BEDTIME STORIES/8_The final lesson_UAE.txt'
-const I_wish_you_enough_AF = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_AF.txt'
-const I_wish_you_enough_CN = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_CN.txt'
-const I_wish_you_enough_DE = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_DE.txt'
-const I_wish_you_enough_EN = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_EN.txt'
-const I_wish_you_enough_ES = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_ES.txt'
-const I_wish_you_enough_FA = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_FA.txt'
-const I_wish_you_enough_FR = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_FR.txt'
-const I_wish_you_enough_IN = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_IN.txt'
-const I_wish_you_enough_JP = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_JP.txt'
-const I_wish_you_enough_RU = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_RU.txt'
-const I_wish_you_enough_SE = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_SE.txt'
-const I_wish_you_enough_SO = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_SO.txt'
-const I_wish_you_enough_TI = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_TI.txt'
-const I_wish_you_enough_UAE = '../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_UAE.txt'
-const The_broken_mirror_AF = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_AF.txt'
-const The_broken_mirror_CN = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_CN.txt'
-const The_broken_mirror_DE = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_DE.txt'
-const The_broken_mirror_EN = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_EN.txt'
-const The_broken_mirror_ES = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_ES.txt'
-const The_broken_mirror_FA = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_FA.txt'
-const The_broken_mirror_FR = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_FR.txt'
-const The_broken_mirror_IN = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_IN.txt'
-const The_broken_mirror_JP = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_JP.txt'
-const The_broken_mirror_RU = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_RU.txt'
-const The_broken_mirror_SE = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_SE.txt'
-const The_broken_mirror_SO = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_SO.txt'
-const The_broken_mirror_TI = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_TI.txt'
-const The_broken_mirror_UAE = '../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_UAE.txt'
+import CONNECTED_TO_CATS_EYES_BRACELET_AF
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_AF.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_CN
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_CN.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_DE
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_DE.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_EN
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_EN.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_ES
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_ES.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_FA
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_FA.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_FR
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_FR.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_IN
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_IN.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_JP
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_JP.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_RU
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_RU.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_SE
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_SE.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_SO
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_SO.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_TI
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_TI.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_UAE
+    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_UAE.txt';
+import The_inner_voice_AF from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_AF.txt';
+import The_inner_voice_CN from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_CN.txt';
+import The_inner_voice_DE from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_DE.txt';
+import The_inner_voice_EN from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_EN.txt';
+import The_inner_voice_ES from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_ES.txt';
+import The_inner_voice_FA from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_FA.txt';
+import The_inner_voice_FR from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_FR.txt';
+import The_inner_voice_IN from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_IN.txt';
+import The_inner_voice_JP from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_JP.txt';
+import The_inner_voice_RU from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_RU.txt';
+import The_inner_voice_SE from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_SE.txt';
+import The_inner_voice_SO from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_SO.txt';
+import The_inner_voice_TI from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_TI.txt';
+import The_inner_voice_UAE from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_UAE.txt';
+import Heaven_and_hell_AF from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_AF.txt';
+import Heaven_and_hell_CN from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_CN.txt';
+import Heaven_and_hell_DE from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_DE.txt';
+import Heaven_and_hell_EN from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_EN.txt';
+import Heaven_and_hell_ES from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_ES.txt';
+import Heaven_and_hell_FA from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_FA .txt';
+import Heaven_and_hell_FR from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_FR.txt';
+import Heaven_and_hell_IN from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_IN.txt';
+import Heaven_and_hell_JP from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_JP.txt';
+import Heaven_and_hell_RU from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_RU.txt';
+import Heaven_and_hell_SE from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_SE.txt';
+import Heaven_and_hell_SO from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_SO.txt';
+import Heaven_and_hell_TI from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_TI.txt';
+import Heaven_and_hell_UAE from '../../Files/CATS EYES BEDTIME STORIES/3_Heaven and hell_UAE.txt';
+import Standing_up_on_the_inside_AF from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_AF.txt';
+import Standing_up_on_the_inside_CN from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_CN.txt';
+import Standing_up_on_the_inside_DE from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_DE.txt';
+import Standing_up_on_the_inside_EN from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_EN.txt';
+import Standing_up_on_the_inside_ES from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_ES.txt';
+import Standing_up_on_the_inside_FA from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_FA.txt';
+import Standing_up_on_the_inside_FR from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_FR.txt';
+import Standing_up_on_the_inside_IN from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_IN.txt';
+import Standing_up_on_the_inside_JP from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_JP.txt';
+import Standing_up_on_the_inside_RU from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_RU.txt';
+import Standing_up_on_the_inside_SE from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_SE.txt';
+import Standing_up_on_the_inside_SO from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_SO.txt';
+import Standing_up_on_the_inside_TI from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_TI.txt';
+import Standing_up_on_the_inside_UAE from '../../Files/CATS EYES BEDTIME STORIES/4_Standing up on the inside_UAE.txt';
+import The_Cracked_pot_AF from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_AF.txt';
+import The_Cracked_pot_CN from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_CN.txt';
+import The_Cracked_pot_DE from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_DE.txt';
+import The_Cracked_pot_EN from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_EN.txt';
+import The_Cracked_pot_ES from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_ES.txt';
+import The_Cracked_pot_FA from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_FA.txt';
+import The_Cracked_pot_FR from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_FR.txt';
+import The_Cracked_pot_IN from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_IN.txt';
+import The_Cracked_pot_JP from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_JP.txt';
+import The_Cracked_pot_RU from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_RU.txt';
+import The_Cracked_pot_SE from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_SE.txt';
+import The_Cracked_pot_SO from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_SO.txt';
+import The_Cracked_pot_TI from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_TI.txt';
+import The_Cracked_pot_UAE from '../../Files/CATS EYES BEDTIME STORIES/5_The Cracked pot_UAE.txt';
+import School_of_the_animals_AF from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_AF.txt';
+import School_of_the_animals_CN from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_CN.txt';
+import School_of_the_animals_DE from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_DE.txt';
+import School_of_the_animals_EN from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_EN.txt';
+import School_of_the_animals_ES from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_ES.txt';
+import School_of_the_animals_FA from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_FA.txt';
+import School_of_the_animals_FR from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_FR.txt';
+import School_of_the_animals_IN from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_IN.txt';
+import School_of_the_animals_JP from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_JP.txt';
+import School_of_the_animals_RU from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_RU.txt';
+import School_of_the_animals_SE from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_SE.txt';
+import School_of_the_animals_SO from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_SO.txt';
+import School_of_the_animals_TI from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_TI.txt';
+import School_of_the_animals_UAE from '../../Files/CATS EYES BEDTIME STORIES/6_School of the animals_UAE.txt';
+import Peace_of_mind_AF from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_AF.txt';
+import Peace_of_mind_CN from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_CN.txt';
+import Peace_of_mind_DE from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_DE.txt';
+import Peace_of_mind_EN from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_EN.txt';
+import Peace_of_mind_ES from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_ES.txt';
+import Peace_of_mind_FA from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_FA.txt';
+import Peace_of_mind_FR from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_FR.txt';
+import Peace_of_mind_IN from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_IN.txt';
+import Peace_of_mind_JP from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_JP.txt';
+import Peace_of_mind_RU from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_RU.txt';
+import Peace_of_mind_SE from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_SE.txt';
+import Peace_of_mind_SO from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_SO.txt';
+import Peace_of_mind_TI from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_TI.txt';
+import Peace_of_mind_UAE from '../../Files/CATS EYES BEDTIME STORIES/7_Peace of mind_UAE.txt';
+import The_final_lesson_AF from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_AF.txt';
+import The_final_lesson_CN from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_CN.txt';
+import The_final_lesson_DE from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_DE.txt';
+import The_final_lesson_EN from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_EN.txt';
+import The_final_lesson_ES from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_ES.txt';
+import The_final_lesson_FA from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_FA.txt';
+import The_final_lesson_FR from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_FR.txt';
+import The_final_lesson_IN from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_IN.txt';
+import The_final_lesson_JP from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_JP.txt';
+import The_final_lesson_RU from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_RU.txt';
+import The_final_lesson_SE from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_SE.txt';
+import The_final_lesson_SO from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_SO.txt';
+import The_final_lesson_TI from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_TI.txt';
+import The_final_lesson_UAE from '../../Files/CATS EYES BEDTIME STORIES/8_The final lesson_UAE.txt';
+import I_wish_you_enough_AF from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_AF.txt';
+import I_wish_you_enough_CN from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_CN.txt';
+import I_wish_you_enough_DE from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_DE.txt';
+import I_wish_you_enough_EN from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_EN.txt';
+import I_wish_you_enough_ES from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_ES.txt';
+import I_wish_you_enough_FA from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_FA.txt';
+import I_wish_you_enough_FR from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_FR.txt';
+import I_wish_you_enough_IN from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_IN.txt';
+import I_wish_you_enough_JP from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_JP.txt';
+import I_wish_you_enough_RU from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_RU.txt';
+import I_wish_you_enough_SE from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_SE.txt';
+import I_wish_you_enough_SO from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_SO.txt';
+import I_wish_you_enough_TI from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_TI.txt';
+import I_wish_you_enough_UAE from '../../Files/CATS EYES BEDTIME STORIES/9_I wish you enough_UAE.txt';
+import The_broken_mirror_AF from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_AF.txt';
+import The_broken_mirror_CN from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_CN.txt';
+import The_broken_mirror_DE from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_DE.txt';
+import The_broken_mirror_EN from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_EN.txt';
+import The_broken_mirror_ES from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_ES.txt';
+import The_broken_mirror_FA from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_FA.txt';
+import The_broken_mirror_FR from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_FR.txt';
+import The_broken_mirror_IN from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_IN.txt';
+import The_broken_mirror_JP from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_JP.txt';
+import The_broken_mirror_RU from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_RU.txt';
+import The_broken_mirror_SE from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_SE.txt';
+import The_broken_mirror_SO from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_SO.txt';
+import The_broken_mirror_TI from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_TI.txt';
+import The_broken_mirror_UAE from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_UAE.txt';
 
 export default class Text_list extends React.Component {
     constructor(props) {
@@ -147,7 +160,6 @@ export default class Text_list extends React.Component {
     }
 
     componentDidMount() {
-
         let obj = {
             "څنګه وحشیانه پيشو سترګې ترلاسه کړ": CONNECTED_TO_CATS_EYES_BRACELET_AF,
             "داخلي غږ": The_inner_voice_AF,
@@ -291,6 +303,7 @@ export default class Text_list extends React.Component {
             'المرآة المكسورة': The_broken_mirror_UAE
         };
         this.props.nameObj(obj)
+
     }
 
     render() {
