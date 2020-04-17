@@ -65,6 +65,7 @@ export default class Stories extends React.Component {
     getStoriesName(name) {
         console.log('Name for stories:' + name)
         let list = this.state.stories_list;
+
         if (list.hasOwnProperty(name)) {
             console.log('Address for text file: ' + list[name])
             this.readTextFile(list[name]);

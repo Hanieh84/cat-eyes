@@ -35,7 +35,8 @@
     "react-view": "^2.3.2",
     "semantic-ui-react": "^0.88.2",
     "switch": "0.0.0",
-    "switch-case": "^2.1.4"
+    "switch-case": "^2.1.4",
+    "typescript": "^3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",

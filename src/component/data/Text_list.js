@@ -1,32 +1,18 @@
 import React from 'react'
-import CONNECTED_TO_CATS_EYES_BRACELET_AF
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_AF.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_CN
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_CN.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_DE
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_DE.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_EN
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_EN.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_ES
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_ES.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_FA
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_FA.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_FR
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_FR.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_IN
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_IN.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_JP
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_JP.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_RU
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_RU.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_SE
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_SE.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_SO
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_SO.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_TI
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_TI.txt';
-import CONNECTED_TO_CATS_EYES_BRACELET_UAE
-    from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_UAE.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_AF from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_AF.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_CN from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_CN.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_DE from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_DE.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_EN from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_EN.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_ES from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_ES.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_FA from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_FA.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_FR from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_FR.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_IN from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_IN.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_JP from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_JP.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_RU from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_RU.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_SE from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_SE.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_SO from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_SO.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_TI from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_TI.txt';
+import CONNECTED_TO_CATS_EYES_BRACELET_UAE from '../../Files/CATS EYES BEDTIME STORIES/1_CONNECTED TO CATS-EYES BRACELET_UAE.txt';
 import The_inner_voice_AF from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_AF.txt';
 import The_inner_voice_CN from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_CN.txt';
 import The_inner_voice_DE from '../../Files/CATS EYES BEDTIME STORIES/2_The inner voice_DE.txt';
@@ -154,14 +140,16 @@ import The_broken_mirror_SO from '../../Files/CATS EYES BEDTIME STORIES/10_The b
 import The_broken_mirror_TI from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_TI.txt';
 import The_broken_mirror_UAE from '../../Files/CATS EYES BEDTIME STORIES/10_The broken mirror_UAE.txt';
 
+
 export default class Text_list extends React.Component {
     constructor(props) {
         super(props);
     }
 
-    componentDidMount() {
+    putListToObj(){
+
         let obj = {
-            "څنګه وحشیانه پيشو سترګې ترلاسه کړ": CONNECTED_TO_CATS_EYES_BRACELET_AF,
+            "څنګه وحشیانه پيشو سترګې ترلاسه کړې": CONNECTED_TO_CATS_EYES_BRACELET_AF,
             "داخلي غږ": The_inner_voice_AF,
             'جنت او دوزخ': Heaven_and_hell_AF,
             'دننه باندې پاڅه اودرېدل': Standing_up_on_the_inside_AF,
@@ -191,7 +179,7 @@ export default class Text_list extends React.Component {
             'Die letzte Lektion': The_final_lesson_DE,
             'Ich wünsche dir genug': I_wish_you_enough_DE,
             'Der zerbrochene Spiegel': The_broken_mirror_DE,
-            'How the wild cat got his eyes': CONNECTED_TO_CATS_EYES_BRACELET_EN,
+            'How the wild cat got his eyes' : CONNECTED_TO_CATS_EYES_BRACELET_EN,
             'The inner voice': The_inner_voice_EN,
             'Heaven and hell': Heaven_and_hell_EN,
             'Standing up on the inside': Standing_up_on_the_inside_EN,
@@ -224,10 +212,10 @@ export default class Text_list extends React.Component {
             'Comment le chat sauvage a eu ses yeux': CONNECTED_TO_CATS_EYES_BRACELET_FR,
             'La voix intérieure': The_inner_voice_FR,
             'Paradis et enfer': Heaven_and_hell_FR,
-            'Debout à l intérieur': Standing_up_on_the_inside_FR,
+            "Debout à l'intérieur": Standing_up_on_the_inside_FR,
             'Le pot craquelé': The_Cracked_pot_FR,
             'École des animaux': School_of_the_animals_FR,
-            'Tranquillité d esprit': Peace_of_mind_FR,
+            "Tranquillité d'esprit": Peace_of_mind_FR,
             'La leçon finale': The_final_lesson_FR,
             'Je vous souhaite assez': I_wish_you_enough_FR,
             'Le miroir brisé': The_broken_mirror_FR,
@@ -235,7 +223,7 @@ export default class Text_list extends React.Component {
             'अन्तर्मन की आवाज़ ': The_inner_voice_IN,
             'स्वर्ग और नर्क': Heaven_and_hell_IN,
             'अंदर से मजबूत होना': Standing_up_on_the_inside_IN,
-            'ूटा हुआ बर्तन': The_Cracked_pot_IN,
+            "टूटा हुआ बर्तन": The_Cracked_pot_IN,
             'जानवरों का विद्यालय': School_of_the_animals_IN,
             'मन की शांति': Peace_of_mind_IN,
             'अंतिम सीख': The_final_lesson_IN,
@@ -303,6 +291,10 @@ export default class Text_list extends React.Component {
             'المرآة المكسورة': The_broken_mirror_UAE
         };
         this.props.nameObj(obj)
+    }
+
+    componentDidMount() {
+        this.putListToObj()
 
     }
 
