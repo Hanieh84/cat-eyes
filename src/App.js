@@ -36,11 +36,17 @@ export default class App extends React.Component {
             storiesName: name
         })
     }
-
+    /*
+        skapa en method handleStoriesList och skicka den genom porten till Flags_menu komponent,
+        inparameter kommer att blir din stories
+        och sedan do sätter värdet för this.state.stories till den storie som har kommit
+    */
     render() {
         const CatPage = () => {
             return (
                 <div>
+                    //du skickar methoden som du skapate (handleStoriesList)
+
                     <Flags_menu
                         onClickFlagCountry={this.onClickFlagCountry.bind(this)}
                     />
