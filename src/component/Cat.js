@@ -10,12 +10,9 @@ export default class Cat extends React.Component {
             cssButtonColor: ["btn btn-primary", "btn btn-secondary"]
         }
     }
-
-
     handleCreate(e, id) {
         this.props.actionButton(id)
     };
-
 
     render() {
         return (

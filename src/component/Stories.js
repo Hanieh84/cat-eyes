@@ -1,7 +1,6 @@
 import React from 'react'
 import './style/stories.css'
 import {Form, TextArea} from 'semantic-ui-react'
-import img from '../images/Illustrationer/2.jpg';
 import Text_list from "./data/Text_list";
 
 export default class Stories extends React.Component {
@@ -9,7 +8,8 @@ export default class Stories extends React.Component {
         super(props);
         this.state = {
             text: "",
-            stories_list: {},
+            image: "",
+            text_image: []
         };
     }
 
@@ -18,13 +18,13 @@ export default class Stories extends React.Component {
         this.getStoriesName(name);
     }
 
-    setObjectToState(obj) {
-        this.state.stories_list = obj
+    setTextImageToState(list) {
+        this.state.text_image = list
     }
 
-    readTextFile = input => {
+    readTextFile = inputText => {
         const rawFile = new XMLHttpRequest();
-        rawFile.open("GET", input, false);
+        rawFile.open("GET", inputText, false);
         rawFile.onreadystatechange = () => {
             if (rawFile.readyState === 4) {
                 if (rawFile.status === 200 || rawFile.status == 0) {
@@ -38,38 +38,49 @@ export default class Stories extends React.Component {
         rawFile.send(null);
     };
 
+    readImageFile(inputImage) {
+        this.setState({
+            image: inputImage
+        });
+    }
+
     render() {
         return (
             <div>
-                <div className="card-header border-0 float-left">
-                    <img id="pic" src={img} alt="image"></img>
-                </div>
-                <Form>
-                    <TextArea id="text" value={this.state.text}/>
-                </Form>
                 <div>
-                    <a href="#" className="btn btn-primary">BUTTON</a>
-                </div>
-                <div className="card-footer w-100 text-muted">
-                    FOOTER
+                    <h2>{this.props.storiesName}</h2>
+
+                    <div className="card-header border-0 float-left">
+                        <img id="pic" src={this.state.image} alt="image"></img>
+                    </div>
+                    <Form>
+                        <TextArea id="text" value={this.state.text}/>
+                    </Form>
+                    <div>
+                        <a href="/Cat" className="btn btn-primary">Back</a>
+                    </div>
+                    <div className="card-footer w-100 text-muted">
+                        FOOTER
+                    </div>
                 </div>
                 <Text_list
-                    allStories={this.state.stories_list}
-                    nameObj={this.setObjectToState.bind(this)}
+                    text_image={this.setTextImageToState.bind(this)}
                 />
-
             </div>
         )
     }
 
     getStoriesName(name) {
-        console.log('Name for stories:' + name)
-        let list = this.state.stories_list;
+        console.log('Name for stories:' + name);
+        let list = this.state.text_image;
 
-        if (list.hasOwnProperty(name)) {
-            console.log('Address for text file: ' + list[name])
-            this.readTextFile(list[name]);
-
+        for (const [index, value] of list.entries()) {
+            if (value[name] != undefined) {
+                let valueText = value[name].text;
+                let valueImage = value[name].image;
+                this.readTextFile(valueText);
+                this.readImageFile(valueImage);
+            }
         }
     }
 }

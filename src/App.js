@@ -12,6 +12,7 @@ import {
     stories_UAE, stories_IN, stories_RU, stories_AF,
     stories_TI
 } from './component/data/Stories_List';
+import Flags_menu from "./component/Flags_menu";
 
 
 export default class App extends React.Component {
@@ -30,9 +31,9 @@ export default class App extends React.Component {
         });
     }
 
-    selectStories(id) {
+    selectStories(name) {
         this.setState({
-            storiesName: id
+            storiesName: name
         })
     }
 
@@ -40,6 +41,9 @@ export default class App extends React.Component {
         const CatPage = () => {
             return (
                 <div>
+                    <Flags_menu
+                        onClickFlagCountry={this.onClickFlagCountry.bind(this)}
+                    />
                     <ul className='circle-container'>
                         {
                             this.state.stories.map(storie =>
@@ -60,7 +64,7 @@ export default class App extends React.Component {
             return (
                 <div>
                     <Stories
-                    storiesName={this.state.storiesName}
+                        storiesName={this.state.storiesName}
                     />
 
                 </div>
@@ -70,9 +74,7 @@ export default class App extends React.Component {
             <div>
                 <BrowserRouter>
                     <div className="container">
-                        <Menu
-                            onClickFlagCountry={this.onClickFlagCountry.bind(this)}
-                        />
+                        <Menu/>
 
                         <Switch>
                             <Route exact={true} path="/" component={Home}/>
