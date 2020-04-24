@@ -6,14 +6,8 @@ import Stories from './component/Stories.js';
 import Menu from "./component/Menu";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {BrowserRouter} from "react-router-dom";
-import {
-    stories_EN, stories_FA, stories_SE, stories_SO,
-    stories_ES, stories_JP, stories_DE, stories_FR, stories_CN,
-    stories_UAE, stories_IN, stories_RU, stories_AF,
-    stories_TI
-} from './component/data/Stories_List';
 import Flags_menu from "./component/Flags_menu";
-
+import {stories_EN} from './component/data/Stories_List';
 
 export default class App extends React.Component {
 
@@ -36,19 +30,28 @@ export default class App extends React.Component {
             storiesName: name
         })
     }
+
     /*
         skapa en method handleStoriesList och skicka den genom porten till Flags_menu komponent,
         inparameter kommer att blir din stories
         och sedan do sätter värdet för this.state.stories till den storie som har kommit
     */
+
+    handleStoriesList(stories) {
+        this.setState({
+            stories: stories
+        })
+
+    }
+
     render() {
         const CatPage = () => {
             return (
+                //du skickar methoden som du skapate (handleStoriesList)
+                //vi har skrivit separat i <Flags_menu> för att undvika skriva 10 gånger för varje circle button
                 <div>
-                    //du skickar methoden som du skapate (handleStoriesList)
-
                     <Flags_menu
-                        onClickFlagCountry={this.onClickFlagCountry.bind(this)}
+                        handleStoriesList={this.handleStoriesList.bind(this)}
                     />
                     <ul className='circle-container'>
                         {
@@ -96,81 +99,83 @@ export default class App extends React.Component {
         )
     }
 
-    onClickFlagCountry(id) {
-        switch (id) {
-            case "SE":
-                this.setState({
-                    stories: stories_SE
-                });
-                break;
-            case "IR":
-                this.setState({
-                    stories: stories_FA
-                });
-                break;
-            case "GB":
-                this.setState({
-                    stories: stories_EN
-                });
-                break;
-            case "SO":
-                this.setState({
-                    stories: stories_SO
-                });
-                break;
-            case "JP":
-                this.setState({
-                    stories: stories_JP
-                });
-                break;
-            case "CN":
-                this.setState({
-                    stories: stories_CN
-                });
-                break;
-            case "ES":
-                this.setState({
-                    stories: stories_ES
-                });
-                break;
-            case "DE":
-                this.setState({
-                    stories: stories_DE
-                });
-                break;
-            case "FR":
-                this.setState({
-                    stories: stories_FR
-                });
-                break;
-            case "UAE":
-                this.setState({
-                    stories: stories_UAE
-                });
-                break;
-            case "IN":
-                this.setState({
-                    stories: stories_IN
-                });
-                break;
-            case "RU":
-                this.setState({
-                    stories: stories_RU
-                });
-                break;
-            case "AF":
-                this.setState({
-                    stories: stories_AF
-                });
-                break;
-            case "ET":
-                this.setState({
-                    stories: stories_TI
-                });
-                break;
-            default:
-                console.log("cant find flag number ");
+    /*
+        onClickFlagCountry(id) {
+            switch (id) {
+                case "SE":
+                    this.setState({
+                        stories: stories_SE
+                    });
+                    break;
+                case "IR":
+                    this.setState({
+                        stories: stories_FA
+                    });
+                    break;
+                case "GB":
+                    this.setState({
+                        stories: stories_EN
+                    });
+                    break;
+                case "SO":
+                    this.setState({
+                        stories: stories_SO
+                    });
+                    break;
+                case "JP":
+                    this.setState({
+                        stories: stories_JP
+                    });
+                    break;
+                case "CN":
+                    this.setState({
+                        stories: stories_CN
+                    });
+                    break;
+                case "ES":
+                    this.setState({
+                        stories: stories_ES
+                    });
+                    break;
+                case "DE":
+                    this.setState({
+                        stories: stories_DE
+                    });
+                    break;
+                case "FR":
+                    this.setState({
+                        stories: stories_FR
+                    });
+                    break;
+                case "UAE":
+                    this.setState({
+                        stories: stories_UAE
+                    });
+                    break;
+                case "IN":
+                    this.setState({
+                        stories: stories_IN
+                    });
+                    break;
+                case "RU":
+                    this.setState({
+                        stories: stories_RU
+                    });
+                    break;
+                case "AF":
+                    this.setState({
+                        stories: stories_AF
+                    });
+                    break;
+                case "ET":
+                    this.setState({
+                        stories: stories_TI
+                    });
+                    break;
+                default:
+                    console.log("cant find flag number ");
+            }
         }
-    }
+    */
 
 }

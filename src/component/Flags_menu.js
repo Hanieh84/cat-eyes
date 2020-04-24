@@ -4,7 +4,8 @@ import {
     stories_ES, stories_JP, stories_DE, stories_FR, stories_CN,
     stories_UAE, stories_IN, stories_RU, stories_AF,
     stories_TI
-} from './component/data/Stories_List';
+} from './data/Stories_List';
+
 
 export default class Flags_menu extends React.Component {
     constructor(props) {
@@ -12,86 +13,61 @@ export default class Flags_menu extends React.Component {
     }
 
     // här inne kan komma din switch
+// skapa en tom list (stories) variable inanan
+// din switch, på varje case den variable ska resättas din stories
 
-    onClickFlagCountry(id) {
+    handleClickEvent(e,id) {
+        let stories = [];
         switch (id) {
             case "SE":
-                this.setState({
-                    stories: stories_SE
-                });
+                stories = stories_SE;
                 break;
             case "IR":
-                this.setState({
-                    stories: stories_FA
-                });
+                stories = stories_FA;
                 break;
             case "GB":
-                this.setState({
-                    stories: stories_EN
-                });
+                stories = stories_EN;
                 break;
             case "SO":
-                this.setState({
-                    stories: stories_SO
-                });
+                stories = stories_SO;
                 break;
             case "JP":
-                this.setState({
-                    stories: stories_JP
-                });
+                stories = stories_JP;
                 break;
             case "CN":
-                this.setState({
-                    stories: stories_CN
-                });
+                stories = stories_CN;
                 break;
             case "ES":
-                this.setState({
-                    stories: stories_ES
-                });
+                stories = stories_ES;
                 break;
             case "DE":
-                this.setState({
-                    stories: stories_DE
-                });
+                stories = stories_DE;
                 break;
             case "FR":
-                this.setState({
-                    stories: stories_FR
-                });
+                stories = stories_FR;
                 break;
             case "UAE":
-                this.setState({
-                    stories: stories_UAE
-                });
+                stories = stories_UAE;
                 break;
             case "IN":
-                this.setState({
-                    stories: stories_IN
-                });
+                stories = stories_IN;
                 break;
             case "RU":
-                this.setState({
-                    stories: stories_RU
-                });
+                stories = stories_RU;
                 break;
             case "AF":
-                this.setState({
-                    stories: stories_AF
-                });
+                stories = stories_AF;
                 break;
             case "ET":
-                this.setState({
-                    stories: stories_TI
-                });
+                stories = stories_TI;
                 break;
             default:
                 console.log("cant find flag number ");
         }
+        // här slutar din switch och din stories har den senaste värdet
+        // här du kalla på din method som du anropade i din port från App.js
+        this.props.handleStoriesList(stories)
     }
-    handleClickEvent(e, id) {
-        this.props.onClickFlagCountry(id);
-    };
 
     render() {
 
