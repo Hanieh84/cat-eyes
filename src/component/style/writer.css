@@ -1,0 +1,23 @@
+body{
+    background-color:white;
+}
+#write{
+    background-color: black;
+}
+
+p.c {
+    font-style: oblique;
+}
+
+.nik{
+    font-style: italic;
+    color:black;
+}
+
+img {
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 240px;
+    height: 300px;
+}

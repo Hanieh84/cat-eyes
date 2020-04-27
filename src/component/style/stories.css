@@ -15,3 +15,14 @@
     margin: 10px;
     border: 1px solid #aaa;
 }
+
+#adminText{
+    font-size: small;
+    position: absolute;
+    left: 30px;
+    top: 115px;
+    right: 5px;
+    bottom: 5px;
+
+}
+

@@ -16,6 +16,7 @@ export default class Stories extends React.Component {
     componentDidMount() {
         const name = this.props.storiesName;
         this.getStoriesName(name);
+
     }
 
     setTextImageToState(list) {
@@ -47,6 +48,7 @@ export default class Stories extends React.Component {
     render() {
         return (
             <div>
+                <br/>
                 <div>
                     <h2>{this.props.storiesName}</h2>
 
@@ -56,9 +58,11 @@ export default class Stories extends React.Component {
                     <Form>
                         <TextArea id="text" value={this.state.text}/>
                     </Form>
+                    <br/>
                     <div>
                         <a href="/Cat" className="btn btn-primary">Back</a>
                     </div>
+                    <br/><br/><br/><br/>
                     <div className="card-footer w-100 text-muted">
                         FOOTER
                     </div>

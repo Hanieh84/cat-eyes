@@ -6,9 +6,7 @@ import {Link} from "react-router-dom";
 export default class Cat extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {
-            cssButtonColor: ["btn btn-primary", "btn btn-secondary"]
-        }
+
     }
     handleCreate(e, id) {
         this.props.actionButton(id)
@@ -18,14 +16,12 @@ export default class Cat extends React.Component {
         return (
             <div>
                 <Link to="/Stories">
-                <button id="btn" className={this.state.cssButtonColor[0]}
+                <button id="btn" className={this.props.buttonColor}
                         onClick={(e) => this.handleCreate(e, this.props.name)}
                 >{this.props.name}</button>
                 </Link>
             </div>
         )
-
-
 
        /*     <Link to="/Cat">
             <button className="img-btn">Enter</button>
