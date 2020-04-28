@@ -8,6 +8,7 @@ export default class Cat extends React.Component {
         super(props);
 
     }
+
     handleCreate(e, id) {
         this.props.actionButton(id)
     };
@@ -16,17 +17,17 @@ export default class Cat extends React.Component {
         return (
             <div>
                 <Link to="/Stories">
-                <button id="btn" className={this.props.buttonColor}
-                        onClick={(e) => this.handleCreate(e, this.props.name)}
-                >{this.props.name}</button>
+                    <button className="storiesButton" id="btn" style={{backgroundColor: this.props.buttonColor}}
+                            onClick={(e) => this.handleCreate(e, this.props.name)}
+                    >{this.props.name}</button>
                 </Link>
             </div>
         )
 
-       /*     <Link to="/Cat">
-            <button className="img-btn">Enter</button>
-    </Link>
-*/
+        /*     <Link to="/Cat">
+             <button className="img-btn">Enter</button>
+     </Link>
+ */
         /*return <form onSubmit={this.handleCreate.bind(this) }>
             <ul className='circle-container'>
                 <li>

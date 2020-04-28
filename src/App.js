@@ -11,9 +11,9 @@ import {stories_EN} from './component/data/Stories_List';
 import Writer from "./component/Writer";
 import Order from "./component/Order";
 
-let button = ["btn btn-primary", "btn btn-secondary", "btn btn-success",
-    "btn btn-danger", "btn btn-warning", "btn btn-info", "btn btn-primary",
-    "btn btn-dark", "btn btn-info", "btn btn-warning"];
+let button = ["#1de9b6", "#b3e5fc", "#5c6bc0",
+    "#7e57c2", "#e040fb", "#ff1744", "#e65100",
+    "#ffab00", "#ffca28", "#9ccc65"];
 
 export default class App extends React.Component {
 
@@ -65,11 +65,8 @@ export default class App extends React.Component {
                         />
                         <ul className='circle-container'>
                             <div id="adminText">
-                                <text>
-                                    info text.. info text..<br/> info text.. info text..<br/> info text.. info
-                                    text..<br/>
-                                    info text.. info text..
-                                </text>
+                              {/*  <text>
+                                    info text.. info text..<br/> info text.. info text..<br/></text>*/}
                             </div>
                             {
                                 this.state.stories.map((key, index) =>
@@ -84,22 +81,7 @@ export default class App extends React.Component {
                             }
                         </ul>
                     </div>
-
-                    {/*   <div>
-                      <ul>
-                          {
-                              this.state.button.map(button =>
-                                  <li key={button}>
-                                      <Cat
-                                          buttonColor={button}
-                                      />
-                                  </li>
-                              )
-                          }
-                      </ul>
-                  </div>*/}
                 </div>
-
             )
         };
 

@@ -16,7 +16,7 @@ export default class Menu extends React.Component {
                     </div>
                     <div className="col-4">
                         <div className="dropdown">
-                            <button className="btn btn-primary  dropdown-toggle" type="button"
+                            <button className="btn btn-info  dropdown-toggle" type="button"
                                     id="dropdownMenuButton"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 MENU
