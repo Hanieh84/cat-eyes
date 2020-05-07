@@ -1,5 +1,6 @@
 import React from 'react'
 import "./style/menu.css";
+import logo from "../images/Illustrationer/logo.jpg";
 
 export default class Menu extends React.Component {
     constructor(props) {
@@ -10,13 +11,16 @@ export default class Menu extends React.Component {
         const {flag, code, name, countries} = require('country-emoji');
         return (
             <div>
-                <br/>
+                <p className="title">CAT EYES TALES</p>
+                <div>
+                    <img className="logo" src={logo} alt="logo"></img>
+                </div>
                 <div className="row">
                     <div className="col-8">
                     </div>
                     <div className="col-4">
                         <div className="dropdown">
-                            <button className="btn btn-info  dropdown-toggle" type="button"
+                            <button className="btn btn-primary  dropdown-toggle" type="button"
                                     id="dropdownMenuButton"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 MENU

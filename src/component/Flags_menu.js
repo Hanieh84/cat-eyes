@@ -14,7 +14,7 @@ export default class Flags_menu extends React.Component {
 
     // här inne kan komma din switch
 // skapa en tom list (stories) variable inanan
-// din switch, på varje case den variable ska resättas din stories
+// din switch, på varje case den variable ska sättas din stories
 
     handleClickEvent(e,id) {
         let stories = [];

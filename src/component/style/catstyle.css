@@ -1,4 +1,7 @@
 
+body{
+    background-color: #282c34;
+}
 #btn{
     font-size: 13px;
     position: relative;

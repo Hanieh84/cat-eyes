@@ -12,7 +12,7 @@ export default class Cat extends React.Component {
     handleCreate(e, id) {
         this.props.actionButton(id)
     };
-
+//det är hella circle 10 buttons
     render() {
         return (
             <div>
@@ -24,59 +24,6 @@ export default class Cat extends React.Component {
             </div>
         )
 
-        /*     <Link to="/Cat">
-             <button className="img-btn">Enter</button>
-     </Link>
- */
-        /*return <form onSubmit={this.handleCreate.bind(this) }>
-            <ul className='circle-container'>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-primary text-right"
-                            ref="inputName"
-                            onClick={this.props.actionButton}>{this.props.children}</button>
-                </li>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-secondary">storie2</button>
-                </li>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-success text-left">storie3</button>
-                </li>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-danger">storie4</button>
-                </li>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-warning">storie5</button>
-                </li>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-info">storie6</button>
-                </li>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-light">storie7</button>
-                </li>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-dark">storie8</button>
-                </li>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-info">storie9</button>
-                </li>
-                <li>
-                    <button id="btn" type="button"
-                            className="btn btn-light">storie10</button>
-                </li>
-                <li>
-                    <p className="text-justify">TEXT</p>
-                </li>
-            </ul>
-        </form>*/
     }
 
 }

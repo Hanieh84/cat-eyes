@@ -5,4 +5,22 @@
 
 .dropdown {
     text-align: right;
+    top: 50px;
+}
+.title{
+    text-align: center;
+    font-size:xx-large;
+    font-family: "American Typewriter";
+    color: limegreen;
+    padding: 5px;
+
+
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 45px;
+    left: 26px;
+
 }
