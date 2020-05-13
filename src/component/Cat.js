@@ -12,6 +12,7 @@ export default class Cat extends React.Component {
     handleCreate(e, id) {
         this.props.actionButton(id)
     };
+
 //det är hella circle 10 buttons
     render() {
         return (
@@ -23,7 +24,5 @@ export default class Cat extends React.Component {
                 </Link>
             </div>
         )
-
     }
-
 }

@@ -1,15 +1,16 @@
-.logo{
+.logo {
     width: 450px;
     height: 70px;
     position: absolute;
     top: 40px;
     left: 150px;
-
 }
-.hr{
+
+.hr {
     border: 1px solid white;
     border-radius: 10px;
 }
+
 .flag-fonts {
     font-size: 40px;
 
@@ -19,15 +20,6 @@
     text-align: right;
     top: 65px;
 }
-/*
-.title{
-    text-align: center;
-    font-size:xx-large;
-    font-family: "American Typewriter";
-    color: limegreen;
-    padding: 5px;
-}
-*/
 
 
 

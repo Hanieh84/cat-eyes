@@ -22,18 +22,7 @@ export default class Writer extends React.Component {
                         <div className="dropdown"></div>
                         <h4 className="nik"> ACTOR, STORYTELLER, AUTHOR </h4>
                         <br/>
-                        <p className="c">This a paragraph, oThis isparagraph, oThis is
-                            a paragparagraph, oThis isa paragraph,
-                            oThis isparaa paragraph, oThis isparaa paragraph,
-                            oThis ispara a paragis a paragraph,ispara a paragis
-                            a paragraph, oblispara a paragis a paragraph,
-                            oblispara a paragis a paragraph, obl oblique.ispara
-                            a paragis a paragraph, oblispara a paragis a paragraph,
-                            ispara a paragis a paragraph, obloblThis a paragraph, oThis isparagraph, oThis is
-                            a paragparagraph, oThis isa paragraph,
-                            oThis isparaa paragraphThis a paragraph, oThis isparagraph, oThis is
-                            a paragparagraph, oThis isa paragraph,
-                            oThis isparaa paragraph, o, o</p>
+                        <p className="c">Here is coming the text</p>
                     </div>
                 </div>
                 <br/><br/><br/><br/>

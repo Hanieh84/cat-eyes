@@ -1,5 +1,6 @@
 {
   "name": "cat-eyes",
+  "homepage": "https://catseyestales.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

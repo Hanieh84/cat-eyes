@@ -63,8 +63,8 @@ export default class Stories extends React.Component {
                         <a href="/Cat" className="btn btn-primary">Back</a>
                     </div>
                     <br/><br/><br/><br/>
+                   {/*FOOTER*/}
                     <div className="card-footer w-100 text-muted">
-                        FOOTER
                     </div>
                 </div>
                 <Text_list

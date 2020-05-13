@@ -8,7 +8,6 @@ export default class Menu extends React.Component {
     }
 
     render() {
-        const {flag, code, name, countries} = require('country-emoji');
         return (
             <div>
                 <div>
@@ -31,15 +30,11 @@ export default class Menu extends React.Component {
                                 <a className="dropdown-item" href="/">Home</a>
                                 <a className="dropdown-item" href="/cat">Cat</a>
                                 <a className="dropdown-item" href="/Writer">Writer</a>
-                                <a className="dropdown-item" href="/Order">Order</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         )
     }
-
 }
