@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Library>
+    <user>nikdee_nik</user>
+    <password>ND8668nd</password>
+    <host>mydb14.surf-town.net</host>
+    <database>nikdee_cats_eyes_tales_db</database>
+    <url>jdbc:mysql://mydb14.surf-town.net:3306/nikdee_cats_eyes_tales_db</url>
+</Library>

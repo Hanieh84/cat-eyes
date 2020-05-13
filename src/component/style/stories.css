@@ -1,11 +1,12 @@
 
-#pic{
+#pic {
     width: 400px;
     height: 300px;
     padding: 7px 10px;
+
 }
 
-#text{
+#text {
     width: 500px;
     height: 300px;
     -webkit-box-shadow: inset 1px 1px 1px 0px dodgerblue;
@@ -16,7 +17,7 @@
     border: 1px solid #aaa;
 }
 
-#adminText{
+#adminText {
     font-size: small;
     position: absolute;
     left: 30px;
@@ -26,3 +27,7 @@
 
 }
 
+.storiesName {
+    color: white;
+    font-style: oblique;
+}

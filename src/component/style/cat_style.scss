@@ -28,8 +28,9 @@
 }
 
 .circle-container {
-  @include on-circle($item-count: 10, $circle-size: 20em, $item-size: 6em);
+  @include on-circle($item-count: 10, $circle-size: 22em, $item-size: 6em);
   margin: 8em auto 0;
+
   /*
   border: solid 5px gray;
   */

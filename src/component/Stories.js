@@ -50,7 +50,7 @@ export default class Stories extends React.Component {
             <div>
                 <br/>
                 <div>
-                    <h2>{this.props.storiesName}</h2>
+                    <h2 className="storiesName">{this.props.storiesName}</h2>
 
                     <div className="card-header border-0 float-left">
                         <img id="pic" src={this.state.image} alt="image"></img>
