@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style/menu.css";
-import logo from "../images/Illustrationer/logo.jpg";
+import logo from "../images/background/logo.png";
 
 export default class Menu extends React.Component {
     constructor(props) {
@@ -8,12 +8,12 @@ export default class Menu extends React.Component {
     }
 
     render() {
-        const {flag, code, name, countries} = require('country-emoji');
         return (
             <div>
-                <p className="title">CAT EYES TALES</p>
                 <div>
                     <img className="logo" src={logo} alt="logo"></img>
+                    <br/><br/><br/><br/><br/>
+                    <hr className="hr"/>
                 </div>
                 <div className="row">
                     <div className="col-8">
@@ -30,8 +30,6 @@ export default class Menu extends React.Component {
                                 <a className="dropdown-item" href="/">Home</a>
                                 <a className="dropdown-item" href="/cat">Cat</a>
                                 <a className="dropdown-item" href="/Writer">Writer</a>
-                                <a className="dropdown-item" href="/Order">Order</a>
-
                             </div>
                         </div>
                     </div>
@@ -39,5 +37,4 @@ export default class Menu extends React.Component {
             </div>
         )
     }
-
 }

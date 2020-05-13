@@ -5,7 +5,7 @@ export const stories_FA = ["چگونه گربه وحشی چشمانش را پی�
     "مدرسه حیوانات", "آرامش ذهن", "درس آخر", "تو را همیشه آرزو کرده ام", "آیینه شکسته"];
 
 export const stories_SE = ["Hur den vilda katten fick ögonen", "Den inre rösten", "Himlen och helvetet", "Stå upp på insidan", "Den spruckna krukan",
-    "Djurens skola", "Sinnesro", "Den sista lektionen", "Jag önskar dig nog", "Den krossade spegeln"];
+    "Djurens skola", "Sinnesro", "Den sista lektionen", "Jag önskar dig tillräckligt", "Den krossade spegeln"];
 
 export const stories_SO = ["Side bay bisada duurjoogta ahi uga helaysaa  indhaheeda", "Codkii hoose", "JANO IYO CADAABTII", "Gudaha istaag", "Dherigii dilaacay",
 "Iskuulka xayawaanka", "IN LAY S NABAD SIIYO", "Casharkii Ugu danbeeyay", "Waxaan rajaynayaa Inay nagu filan tahay", "MURAAYADII JABTAY"];

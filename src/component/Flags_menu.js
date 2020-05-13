@@ -1,9 +1,19 @@
 import React from "react";
 import {
-    stories_EN, stories_FA, stories_SE, stories_SO,
-    stories_ES, stories_JP, stories_DE, stories_FR, stories_CN,
-    stories_UAE, stories_IN, stories_RU, stories_AF,
-    stories_TI
+    stories_AF,
+    stories_CN,
+    stories_DE,
+    stories_EN,
+    stories_ES,
+    stories_FA,
+    stories_FR,
+    stories_IN,
+    stories_JP,
+    stories_RU,
+    stories_SE,
+    stories_SO,
+    stories_TI,
+    stories_UAE
 } from './data/Stories_List';
 
 
@@ -16,7 +26,7 @@ export default class Flags_menu extends React.Component {
 // skapa en tom list (stories) variable inanan
 // din switch, på varje case den variable ska sättas din stories
 
-    handleClickEvent(e,id) {
+    handleClickEvent(e, id) {
         let stories = [];
         switch (id) {
             case "SE":
@@ -70,7 +80,6 @@ export default class Flags_menu extends React.Component {
     }
 
     render() {
-
         const {flag, code, name, countries} = require('country-emoji');
         return (
             <div>
@@ -99,5 +108,4 @@ export default class Flags_menu extends React.Component {
             </div>
         )
     }
-
 }

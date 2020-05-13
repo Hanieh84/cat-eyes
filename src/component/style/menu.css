@@ -1,26 +1,25 @@
+.logo {
+    width: 450px;
+    height: 70px;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+}
+
+.hr {
+    border: 1px solid white;
+    border-radius: 10px;
+}
 
 .flag-fonts {
-    font-size: 30px;
+    font-size: 40px;
+
 }
 
 .dropdown {
     text-align: right;
-    top: 50px;
+    top: 65px;
 }
-.title{
-    text-align: center;
-    font-size:xx-large;
-    font-family: "American Typewriter";
-    color: limegreen;
-    padding: 5px;
 
 
-}
-.logo{
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    top: 45px;
-    left: 26px;
 
-}

@@ -5,8 +5,9 @@ body{
     background-color: black;
 }
 
-p.c {
+.c {
     font-style: oblique;
+    color: white;
 }
 
 .nik{
@@ -15,9 +16,11 @@ p.c {
 }
 
 img {
-    border: 2px solid #ddd;
+    border: 0 solid dodgerblue;
     border-radius: 4px;
     padding: 5px;
     width: 240px;
     height: 300px;
+    box-shadow: 5px 10px black;
+
 }
