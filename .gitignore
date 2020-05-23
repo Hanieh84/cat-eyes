@@ -12,6 +12,9 @@
 # production
 /build
 
+#User Files
+/src/Files/User.xml
+
 # misc
 .DS_Store
 .env.local
