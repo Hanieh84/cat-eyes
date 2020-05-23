@@ -2,6 +2,8 @@ import React from 'react'
 import './style/stories.css'
 import {Form, TextArea} from 'semantic-ui-react'
 import Text_list from "./data/Text_list";
+import Popup from 'react-popup';
+import {Link} from "react-router-dom";
 
 export default class Stories extends React.Component {
     constructor(props) {

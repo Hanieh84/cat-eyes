@@ -6,12 +6,19 @@ import {Link} from "react-router-dom";
 export default class Cat extends React.Component {
     constructor(props) {
         super(props);
+        this.state = {
+            storiesName: ""
+        }
 
     }
 
     handleCreate(e, id) {
         this.props.actionButton(id)
     };
+
+    componentDidMount() {
+
+    }
 
 //det är hella circle 10 buttons
     render() {

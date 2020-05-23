@@ -5,22 +5,29 @@ body{
     background-color: black;
 }
 
-.c {
+.textNik {
     font-style: oblique;
     color: white;
+    font-size: 16px;
 }
 
 .nik{
     font-style: italic;
-    color:black;
+    color:white;
+    margin-top: 100px;
+    font-size: 30px;
+
+
 }
 
 img {
-    border: 0 solid dodgerblue;
+    border: 1px solid white;
     border-radius: 4px;
     padding: 5px;
     width: 240px;
     height: 300px;
     box-shadow: 5px 10px black;
+    margin-top: 20px;
+
 
 }

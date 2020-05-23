@@ -1,6 +1,8 @@
 import React from 'react'
 import "./style/menu.css";
-import logo from "../images/background/logo.png";
+import {Route, Switch} from "react-router";
+import Cat from "../component/Cat"
+import {Link} from "react-router-dom";
 
 export default class Menu extends React.Component {
     constructor(props) {
@@ -10,11 +12,9 @@ export default class Menu extends React.Component {
     render() {
         return (
             <div>
-                <div>
+                {/*<div>
                     <img className="logo" src={logo} alt="logo"></img>
-                    <br/><br/><br/><br/><br/>
-                    <hr className="hr"/>
-                </div>
+                </div>*/}
                 <div className="row">
                     <div className="col-8">
                     </div>
@@ -27,9 +27,18 @@ export default class Menu extends React.Component {
                             </button>
                             <div className="dropdown-menu"
                                  aria-labelledby="dropdownMenuButton">
-                                <a className="dropdown-item" href="/">Home</a>
-                                <a className="dropdown-item" href="/cat">Cat</a>
-                                <a className="dropdown-item" href="/Writer">Writer</a>
+                                <Link to="/">
+                                    <button className="dropdown-item">Home</button>
+                                </Link>
+                                <Link to="/Cat">
+                                    <button className="dropdown-item">Cat</button>
+                                </Link>
+                                <Link to="/Writer">
+                                    <button className="dropdown-item">Writer</button>
+                                </Link>
+{/*
+                                <a href="/">HOME</a>
+*/}
                             </div>
                         </div>
                     </div>
