@@ -32,5 +32,11 @@
 
 .storiesName {
     color: white;
-    font-style: oblique;margin-top: 60px;
+    font-style: oblique;
+    margin-top: 60px;
+}
+
+#listenMenu {
+    top: -50px;
+    margin-left: 530px;
 }

@@ -87,20 +87,20 @@ export default class Flags_menu extends React.Component {
                 <div className="row">
                     <div className="col-8">
                         <div className="flag-fonts">
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'SE')}>{flag('SE')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'IR')}>{flag('IR')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'FR')}>{flag('FR')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'DE')}> {flag('DE')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'IN')}> {flag('IN')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'JP')}> {flag('JP')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'UAE')}> {flag('UAE')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'CN')}> {flag('CN')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'AF')}> {flag('AF')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'RU')}> {flag('RU')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'SO')}> {flag('SO')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'ES')}> {flag('ES')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'ET')}> {flag('ET')}</a>
-                            <a href="#" onClick={(e) => this.handleClickEvent(e, 'GB')}> {flag('GB')}</a>
+                            <a title="Swedish" onClick={(e) => this.handleClickEvent(e, 'SE')}>{flag('SE')}</a>
+                            <a title="Farsi" onClick={(e) => this.handleClickEvent(e, 'IR')}>{flag('IR')}</a>
+                            <a title="French" onClick={(e) => this.handleClickEvent(e, 'FR')}>{flag('FR')}</a>
+                            <a title="German" onClick={(e) => this.handleClickEvent(e, 'DE')}> {flag('DE')}</a>
+                            <a title="Hindi" onClick={(e) => this.handleClickEvent(e, 'IN')}> {flag('IN')}</a>
+                            <a title="Japanese" onClick={(e) => this.handleClickEvent(e, 'JP')}> {flag('JP')}</a>
+                            <a title="Arabic" onClick={(e) => this.handleClickEvent(e, 'UAE')}> {flag('UAE')}</a>
+                            <a title="Chinese" onClick={(e) => this.handleClickEvent(e, 'CN')}> {flag('CN')}</a>
+                            <a title="Pashto" onClick={(e) => this.handleClickEvent(e, 'AF')}> {flag('AF')}</a>
+                            <a title="Russian" onClick={(e) => this.handleClickEvent(e, 'RU')}> {flag('RU')}</a>
+                            <a title="Somali" onClick={(e) => this.handleClickEvent(e, 'SO')}> {flag('SO')}</a>
+                            <a title="Spanish" onClick={(e) => this.handleClickEvent(e, 'ES')}> {flag('ES')}</a>
+                            <a title="Ethiopia" onClick={(e) => this.handleClickEvent(e, 'ET')}> {flag('ET')}</a>
+                            <a title="United Kingdom" onClick={(e) => this.handleClickEvent(e, 'GB')}> {flag('GB')}</a>
                         </div>
                     </div>
                 </div>

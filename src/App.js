@@ -24,7 +24,7 @@ export default class App extends React.Component {
         };
     }
 
-    componentDidMount(){
+    componentDidMount() {
         // här kan du testa och från början kör console.log
         this.setState({
             stories: stories_EN
@@ -47,6 +47,7 @@ export default class App extends React.Component {
             stories: stories
         })
     }
+
     render() {
         const CatPage = () => {
             return (
@@ -67,6 +68,7 @@ export default class App extends React.Component {
                                     <li key={key}>
                                         <Cat
                                             name={key}
+                                            number={index+1}
                                             actionButton={this.selectStories.bind(this)}
                                             buttonColor={button[index]}
                                         />

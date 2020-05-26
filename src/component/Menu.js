@@ -12,9 +12,6 @@ export default class Menu extends React.Component {
     render() {
         return (
             <div>
-                {/*<div>
-                    <img className="logo" src={logo} alt="logo"></img>
-                </div>*/}
                 <div className="row">
                     <div className="col-8">
                     </div>
@@ -36,9 +33,6 @@ export default class Menu extends React.Component {
                                 <Link to="/Writer">
                                     <button className="dropdown-item">Writer</button>
                                 </Link>
-{/*
-                                <a href="/">HOME</a>
-*/}
                             </div>
                         </div>
                     </div>

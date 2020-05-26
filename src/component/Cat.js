@@ -27,7 +27,7 @@ export default class Cat extends React.Component {
                 <Link to="/Stories">
                     <button className="storiesButton" id="btn" style={{backgroundColor: this.props.buttonColor}}
                             onClick={(e) => this.handleCreate(e, this.props.name)}
-                    >{this.props.name}</button>
+                    >{this.props.number} {this.props.name}</button>
                 </Link>
             </div>
         )

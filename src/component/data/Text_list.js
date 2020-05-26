@@ -163,11 +163,62 @@ import CATS_EYES_Image_seven from '../../images/Illustrationer/7_Peace of mind.j
 import CATS_EYES_Image_eight from '../../images/Illustrationer/8_The final lesson.jpg'
 import CATS_EYES_Image_nine from '../../images/Illustrationer/9_I wish you enough.jpg';
 import CATS_EYES_Image_ten from '../../images/Illustrationer/10_The broken mirror.jpg';
+import CONNECTED_TO_CATS_EYES_BRACELET_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 01-SVENSKA-mixdown.mp3';
+import CONNECTED_TO_CATS_EYES_BRACELET_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 01_ENGELSKA-mixdown.mp3';
+import CONNECTED_TO_CATS_EYES_BRACELET_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 01_FRANSKA-mixdown.mp3';
+import CONNECTED_TO_CATS_EYES_BRACELET_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 01_SPANSKA-mixdown.mp3';
+import CONNECTED_TO_CATS_EYES_BRACELET_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 01_TYSKA-mixdown.mp3';
+import The_inner_voice_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 02_SVENSKA-mixdown.mp3';
+import The_inner_voice_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 02_ENGELSKA-mixdown.mp3';
+import The_inner_voice_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 02_FRANSKA-mixdown.mp3';
+import The_inner_voice_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 02_SPANSKA-mixdown.mp3';
+import The_inner_voice_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 02_TYSKA-mixdown.mp3';
+import Heaven_and_hell_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 03_SVENSKA-mixdown.mp3';
+import Heaven_and_hell_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 03_ENGELSKA-mixdown.mp3';
+import Heaven_and_hell_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 03_FRANSKA-mixdown.mp3';
+import Heaven_and_hell_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 03_SPANSKA-mixdown.mp3';
+import Heaven_and_hell_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 03_TYSKA-mixdown.mp3';
+import Standing_up_on_the_inside_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 04_SVENSKA-mixdown-ny.mp3';
+import Standing_up_on_the_inside_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 04_ENGELSKA-mixdown.mp3';
+import Standing_up_on_the_inside_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 04_FRANSKA-mixdown.mp3';
+import Standing_up_on_the_inside_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 04_SPANSKA-mixdown.mp3';
+import Standing_up_on_the_inside_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 04_TYSKA-mixdown.mp3';
+import The_Cracked_pot_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 05_SVENSKA-mixdown.mp3';
+import The_Cracked_pot_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 05_ENGELSKA-mixdown.mp3';
+import The_Cracked_pot_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 05_FRANSKA-mixdown.mp3';
+import The_Cracked_pot_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 05_SPANSKA-mixdown.mp3';
+import The_Cracked_pot_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 05_TYSKA-mixdown.mp3';
+import School_of_the_animals_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 06_SVENSKA-mixdown.mp3';
+import School_of_the_animals_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 06_ENGELSKA-mixdown.mp3';
+import School_of_the_animals_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 06_FRANSKA-mixdown.mp3';
+import School_of_the_animals_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 06_SPANSKA-mixdown.mp3';
+import School_of_the_animals_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 06_TYSKA-mixdown.mp3';
+import Peace_of_mind_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 07_SVENSKA-mixdown.mp3';
+import Peace_of_mind_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 07_ENGELSKA-mixdown.mp3';
+import Peace_of_mind_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 07_FRANSKA-mixdown.mp3';
+import Peace_of_mind_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 07_SPANSKA-mixdown.mp3';
+import Peace_of_mind_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 07_TYSKA-mixdown.mp3';
+import The_final_lesson_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 08_SVENSKA-mixdown.mp3';
+import The_final_lesson_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 08_ENGELSKA-mixdown.mp3';
+import The_final_lesson_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 08_FRANSKA-mixdown.mp3';
+import The_final_lesson_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 08_SPANSKA-mixdown.mp3';
+import The_final_lesson_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 08_TYSKA-mixdown.mp3';
+import I_wish_you_enough_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 09_SVENSKA-mixdown.mp3';
+import I_wish_you_enough_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 09_ENGELSKA-mixdown.mp3';
+import I_wish_you_enough_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 09_FRANSKA-mixdown.mp3';
+import I_wish_you_enough_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 09_SPANSKA-mixdown.mp3';
+import I_wish_you_enough_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 09_TYSKA-mixdown.mp3';
+import The_broken_mirror_SE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 10_SVENSKA-mixdown.mp3';
+import The_broken_mirror_EN_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 10_ENGELSKA-mixdown.mp3';
+import The_broken_mirror_FR_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 10_FRANSKA-mixdown.mp3';
+import The_broken_mirror_ES_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats Eyes 10_SPANSKA-mixdown.mp3';
+import The_broken_mirror_DE_SOUND from '../../Files/Cats Eyes Stories-mixade/Cats eyes 10_TYSKA-mixdown.mp3';
+
 
 export default class Text_list extends React.Component {
 
     putListToObj() {
-        let text_image = [
+        let text_image_sound = [
             {
                 "څنګه وحشیانه پيشو سترګې ترلاسه کړې": {
                     text: CONNECTED_TO_CATS_EYES_BRACELET_AF,
@@ -183,20 +234,23 @@ export default class Text_list extends React.Component {
             {
                 'die Wildkatze seine Augen bekam': {
                     text: CONNECTED_TO_CATS_EYES_BRACELET_DE,
-                    image: CATS_EYES_Image_one
+                    image: CATS_EYES_Image_one,
+                    sound: CONNECTED_TO_CATS_EYES_BRACELET_DE_SOUND
                 }
             },
             {
                 'How the wild cat got his eyes': {
                     text: CONNECTED_TO_CATS_EYES_BRACELET_EN,
-                    image: CATS_EYES_Image_one
+                    image: CATS_EYES_Image_one,
+                    sound: CONNECTED_TO_CATS_EYES_BRACELET_EN_SOUND
                 }
 
             },
             {
                 'Cómo obtuvo el gato silvestre sus ojos': {
                     text: CONNECTED_TO_CATS_EYES_BRACELET_ES,
-                    image: CATS_EYES_Image_one
+                    image: CATS_EYES_Image_one,
+                    sound: CONNECTED_TO_CATS_EYES_BRACELET_ES_SOUND
                 }
 
             },
@@ -210,7 +264,8 @@ export default class Text_list extends React.Component {
             {
                 'Comment le chat sauvage a eu ses yeux': {
                     text: CONNECTED_TO_CATS_EYES_BRACELET_FR,
-                    image: CATS_EYES_Image_one
+                    image: CATS_EYES_Image_one,
+                    sound: CONNECTED_TO_CATS_EYES_BRACELET_FR_SOUND
                 }
             },
             {
@@ -235,7 +290,8 @@ export default class Text_list extends React.Component {
             {
                 'Hur den vilda katten fick ögonen': {
                     text: CONNECTED_TO_CATS_EYES_BRACELET_SE,
-                    image: CATS_EYES_Image_one
+                    image: CATS_EYES_Image_one,
+                    sound: CONNECTED_TO_CATS_EYES_BRACELET_SE_SOUND
                 }
             },
             {
@@ -271,19 +327,22 @@ export default class Text_list extends React.Component {
             {
                 'Die innere Stimme': {
                     text: The_inner_voice_DE,
-                    image: CATS_EYES_Image_two
+                    image: CATS_EYES_Image_two,
+                    sound: The_inner_voice_DE_SOUND
                 }
             },
             {
                 'The inner voice': {
                     text: The_inner_voice_EN,
-                    image: CATS_EYES_Image_two
+                    image: CATS_EYES_Image_two,
+                    sound: The_inner_voice_EN_SOUND
                 }
             },
             {
                 'La voz interna': {
                     text: The_inner_voice_ES,
-                    image: CATS_EYES_Image_two
+                    image: CATS_EYES_Image_two,
+                    sound: The_inner_voice_ES_SOUND
                 }
             },
             {
@@ -295,7 +354,8 @@ export default class Text_list extends React.Component {
             {
                 'La voix intérieure': {
                     text: The_inner_voice_FR,
-                    image: CATS_EYES_Image_two
+                    image: CATS_EYES_Image_two,
+                    sound: The_inner_voice_FR_SOUND
                 }
             },
             {
@@ -319,7 +379,8 @@ export default class Text_list extends React.Component {
             {
                 'Den inre rösten': {
                     text: The_inner_voice_SE,
-                    image: CATS_EYES_Image_two
+                    image: CATS_EYES_Image_two,
+                    sound: The_inner_voice_SE_SOUND
                 }
             },
             {
@@ -355,19 +416,22 @@ export default class Text_list extends React.Component {
             {
                 'Himmel und Hölle': {
                     text: Heaven_and_hell_DE,
-                    image: CATS_EYES_Image_tree
+                    image: CATS_EYES_Image_tree,
+                    sound: Heaven_and_hell_DE_SOUND
                 }
             },
             {
                 'Heaven and hell': {
                     text: Heaven_and_hell_EN,
-                    image: CATS_EYES_Image_tree
+                    image: CATS_EYES_Image_tree,
+                    sound: Heaven_and_hell_EN_SOUND
                 }
             },
             {
                 'El cielo y el infierno': {
                     text: Heaven_and_hell_ES,
-                    image: CATS_EYES_Image_tree
+                    image: CATS_EYES_Image_tree,
+                    sound: Heaven_and_hell_ES_SOUND
                 }
             },
             {
@@ -379,7 +443,8 @@ export default class Text_list extends React.Component {
             {
                 'Paradis et enfer': {
                     text: Heaven_and_hell_FR,
-                    image: CATS_EYES_Image_tree
+                    image: CATS_EYES_Image_tree,
+                    sound: Heaven_and_hell_FR_SOUND
                 }
             },
             {
@@ -403,7 +468,8 @@ export default class Text_list extends React.Component {
             {
                 'Himlen och helvetet': {
                     text: Heaven_and_hell_SE,
-                    image: CATS_EYES_Image_tree
+                    image: CATS_EYES_Image_tree,
+                    sound: Heaven_and_hell_SE_SOUND
                 }
             },
             {
@@ -439,19 +505,22 @@ export default class Text_list extends React.Component {
             {
                 'Ich stehe auf der Innenseite': {
                     text: Standing_up_on_the_inside_DE,
-                    image: CATS_EYES_Image_four
+                    image: CATS_EYES_Image_four,
+                    sound: Standing_up_on_the_inside_DE_SOUND
                 }
             },
             {
                 'Standing up on the inside': {
                     text: Standing_up_on_the_inside_EN,
-                    image: CATS_EYES_Image_four
+                    image: CATS_EYES_Image_four,
+                    sound: Standing_up_on_the_inside_EN_SOUND
                 }
             },
             {
                 'De pie en el interior': {
                     text: Standing_up_on_the_inside_ES,
-                    image: CATS_EYES_Image_four
+                    image: CATS_EYES_Image_four,
+                    sound: Standing_up_on_the_inside_ES_SOUND
                 }
             },
             {
@@ -463,7 +532,8 @@ export default class Text_list extends React.Component {
             {
                 "Debout à l'intérieur": {
                     text: Standing_up_on_the_inside_FR,
-                    image: CATS_EYES_Image_four
+                    image: CATS_EYES_Image_four,
+                    sound: Standing_up_on_the_inside_FR_SOUND
                 }
             },
             {
@@ -488,7 +558,8 @@ export default class Text_list extends React.Component {
             {
                 'Stå upp på insidan': {
                     text: Standing_up_on_the_inside_SE,
-                    image: CATS_EYES_Image_four
+                    image: CATS_EYES_Image_four,
+                    sound: Standing_up_on_the_inside_SE_SOUND
                 }
             },
             {
@@ -525,19 +596,22 @@ export default class Text_list extends React.Component {
             {
                 'Der Cracked Pot': {
                     text: The_Cracked_pot_DE,
-                    image: CATS_EYES_Image_five
+                    image: CATS_EYES_Image_five,
+                    sound: The_Cracked_pot_DE_SOUND
                 }
             },
             {
                 'The Cracked pot': {
                     text: The_Cracked_pot_EN,
-                    image: CATS_EYES_Image_five
+                    image: CATS_EYES_Image_five,
+                    sound: The_Cracked_pot_EN_SOUND
                 }
             },
             {
                 'La vasija agrietada': {
                     text: The_Cracked_pot_ES,
-                    image: CATS_EYES_Image_five
+                    image: CATS_EYES_Image_five,
+                    sound: The_Cracked_pot_ES_SOUND
                 }
             },
             {
@@ -549,7 +623,8 @@ export default class Text_list extends React.Component {
             {
                 'Le pot craquelé': {
                     text: The_Cracked_pot_FR,
-                    image: CATS_EYES_Image_five
+                    image: CATS_EYES_Image_five,
+                    sound: The_Cracked_pot_FR_SOUND
                 }
             },
             {
@@ -573,7 +648,8 @@ export default class Text_list extends React.Component {
             {
                 'Den spruckna krukan': {
                     text: The_Cracked_pot_SE,
-                    image: CATS_EYES_Image_five
+                    image: CATS_EYES_Image_five,
+                    sound: The_Cracked_pot_SE_SOUND
                 }
             },
             {
@@ -611,19 +687,22 @@ export default class Text_list extends React.Component {
             {
                 'Schule der Tiere': {
                     text: School_of_the_animals_DE,
-                    image: CATS_EYES_Image_six
+                    image: CATS_EYES_Image_six,
+                    sound: School_of_the_animals_DE_SOUND
                 }
             },
             {
                 'School of the animals': {
                     text: School_of_the_animals_EN,
-                    image: CATS_EYES_Image_six
+                    image: CATS_EYES_Image_six,
+                    sound: School_of_the_animals_EN_SOUND
                 }
             },
             {
                 'Escuela de animales': {
                     text: School_of_the_animals_ES,
-                    image: CATS_EYES_Image_six
+                    image: CATS_EYES_Image_six,
+                    sound: School_of_the_animals_ES_SOUND
                 }
             },
             {
@@ -635,7 +714,8 @@ export default class Text_list extends React.Component {
             {
                 'École des animaux': {
                     text: School_of_the_animals_FR,
-                    image: CATS_EYES_Image_six
+                    image: CATS_EYES_Image_six,
+                    sound: School_of_the_animals_FR_SOUND
                 }
             },
             {
@@ -659,7 +739,8 @@ export default class Text_list extends React.Component {
             {
                 'Djurens skola': {
                     text: School_of_the_animals_SE,
-                    image: CATS_EYES_Image_six
+                    image: CATS_EYES_Image_six,
+                    sound: School_of_the_animals_SE_SOUND
                 }
             },
             {
@@ -695,19 +776,22 @@ export default class Text_list extends React.Component {
             {
                 'Seelenfrieden': {
                     text: Peace_of_mind_DE,
-                    image: CATS_EYES_Image_seven
+                    image: CATS_EYES_Image_seven,
+                    sound: Peace_of_mind_DE_SOUND
                 }
             },
             {
                 'Peace of mind': {
                     text: Peace_of_mind_EN,
-                    image: CATS_EYES_Image_seven
+                    image: CATS_EYES_Image_seven,
+                    sound: Peace_of_mind_EN_SOUND
                 }
             },
             {
                 'Paz interior': {
                     text: Peace_of_mind_ES,
-                    image: CATS_EYES_Image_seven
+                    image: CATS_EYES_Image_seven,
+                    sound: Peace_of_mind_ES_SOUND
                 }
             },
             {
@@ -719,7 +803,8 @@ export default class Text_list extends React.Component {
             {
                 "Tranquillité d'esprit": {
                     text: Peace_of_mind_FR,
-                    image: CATS_EYES_Image_seven
+                    image: CATS_EYES_Image_seven,
+                    sound: Peace_of_mind_FR_SOUND
                 }
             },
             {
@@ -743,7 +828,9 @@ export default class Text_list extends React.Component {
             {
                 'Sinnesro': {
                     text: Peace_of_mind_SE,
-                    image: CATS_EYES_Image_seven
+                    image: CATS_EYES_Image_seven,
+                    sound: Peace_of_mind_SE_SOUND
+
                 }
             },
             {
@@ -779,19 +866,22 @@ export default class Text_list extends React.Component {
             {
                 'Die letzte Lektion': {
                     text: The_final_lesson_DE,
-                    image: CATS_EYES_Image_eight
+                    image: CATS_EYES_Image_eight,
+                    sound: The_final_lesson_DE_SOUND
                 }
             },
             {
                 'The final lesson': {
                     text: The_final_lesson_EN,
-                    image: CATS_EYES_Image_eight
+                    image: CATS_EYES_Image_eight,
+                    sound: The_final_lesson_EN_SOUND
                 }
             },
             {
                 'La lección final': {
                     text: The_final_lesson_ES,
-                    image: CATS_EYES_Image_eight
+                    image: CATS_EYES_Image_eight,
+                    sound: The_final_lesson_ES_SOUND
                 }
             },
             {
@@ -803,7 +893,8 @@ export default class Text_list extends React.Component {
             {
                 'La leçon finale': {
                     text: The_final_lesson_FR,
-                    image: CATS_EYES_Image_eight
+                    image: CATS_EYES_Image_eight,
+                    sound: The_final_lesson_FR_SOUND
                 }
             },
             {
@@ -827,7 +918,8 @@ export default class Text_list extends React.Component {
             {
                 'Den sista lektionen': {
                     text: The_final_lesson_SE,
-                    image: CATS_EYES_Image_eight
+                    image: CATS_EYES_Image_eight,
+                    sound: The_final_lesson_SE_SOUND
                 }
             },
             {
@@ -863,19 +955,22 @@ export default class Text_list extends React.Component {
             {
                 'Ich wünsche dir genug': {
                     text: I_wish_you_enough_DE,
-                    image: CATS_EYES_Image_nine
+                    image: CATS_EYES_Image_nine,
+                    sound: I_wish_you_enough_DE_SOUND
                 }
             },
             {
                 'I wish you enough': {
                     text: I_wish_you_enough_EN,
-                    image: CATS_EYES_Image_nine
+                    image: CATS_EYES_Image_nine,
+                    sound: I_wish_you_enough_EN_SOUND
                 }
             },
             {
                 'Te deseo lo suficiente': {
                     text: I_wish_you_enough_ES,
-                    image: CATS_EYES_Image_nine
+                    image: CATS_EYES_Image_nine,
+                    sound: I_wish_you_enough_ES_SOUND
                 }
             },
             {
@@ -887,7 +982,8 @@ export default class Text_list extends React.Component {
             {
                 'Je vous souhaite assez': {
                     text: I_wish_you_enough_FR,
-                    image: CATS_EYES_Image_nine
+                    image: CATS_EYES_Image_nine,
+                    sound: I_wish_you_enough_FR_SOUND
                 }
             },
             {
@@ -911,7 +1007,8 @@ export default class Text_list extends React.Component {
             {
                 'Jag önskar dig tillräckligt': {
                     text: I_wish_you_enough_SE,
-                    image: CATS_EYES_Image_nine
+                    image: CATS_EYES_Image_nine,
+                    sound: I_wish_you_enough_SE_SOUND
                 }
             },
             {
@@ -947,19 +1044,22 @@ export default class Text_list extends React.Component {
             {
                 'Der zerbrochene Spiegel': {
                     text: The_broken_mirror_DE,
-                    image: CATS_EYES_Image_ten
+                    image: CATS_EYES_Image_ten,
+                    sound: The_broken_mirror_DE_SOUND
                 }
             },
             {
                 'The broken mirror': {
                     text: The_broken_mirror_EN,
-                    image: CATS_EYES_Image_ten
+                    image: CATS_EYES_Image_ten,
+                    sound: The_broken_mirror_EN_SOUND
                 }
             },
             {
                 'El espejo roto': {
                     text: The_broken_mirror_ES,
-                    image: CATS_EYES_Image_ten
+                    image: CATS_EYES_Image_ten,
+                    sound: The_broken_mirror_ES_SOUND
                 }
             },
             {
@@ -971,7 +1071,8 @@ export default class Text_list extends React.Component {
             {
                 'Le miroir brisé': {
                     text: The_broken_mirror_FR,
-                    image: CATS_EYES_Image_ten
+                    image: CATS_EYES_Image_ten,
+                    sound: The_broken_mirror_FR_SOUND
                 }
             },
             {
@@ -995,7 +1096,8 @@ export default class Text_list extends React.Component {
             {
                 'Den krossade spegeln': {
                     text: The_broken_mirror_SE,
-                    image: CATS_EYES_Image_ten
+                    image: CATS_EYES_Image_ten,
+                    sound: The_broken_mirror_SE_SOUND
                 }
             },
             {
@@ -1017,7 +1119,7 @@ export default class Text_list extends React.Component {
                 }
             }
         ];
-        this.props.text_image(text_image);
+        this.props.text_image(text_image_sound);
     }
 
     componentDidMount() {
