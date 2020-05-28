@@ -22,9 +22,9 @@ export default class Flags_menu extends React.Component {
         super(props);
     }
 
-    // här inne kan komma din switch
+    // här inne kommer switch
 // skapa en tom list (stories) variable inanan
-// din switch, på varje case den variable ska sättas din stories
+// switch, på värje case den variable ska sättas stories
 
     handleClickEvent(e, id) {
         let stories = [];
@@ -74,8 +74,8 @@ export default class Flags_menu extends React.Component {
             default:
                 console.log("cant find flag number ");
         }
-        // här slutar din switch och din stories har den senaste värdet
-        // här du kalla på din method som du anropade i din port från App.js
+        // här slutar switch och stories har den senaste värdet
+        // här man kalla på method som anropade i porten från App.js
         this.props.handleStoriesList(stories)
     }
 

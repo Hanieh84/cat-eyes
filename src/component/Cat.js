@@ -9,18 +9,13 @@ export default class Cat extends React.Component {
         this.state = {
             storiesName: ""
         }
-
     }
 
     handleCreate(e, id) {
         this.props.actionButton(id)
     };
 
-    componentDidMount() {
-
-    }
-
-//det är hella circle 10 buttons
+// 10 circle buttons
     render() {
         return (
             <div>

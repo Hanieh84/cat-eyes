@@ -25,7 +25,6 @@ export default class App extends React.Component {
     }
 
     componentDidMount() {
-        // här kan du testa och från början kör console.log
         this.setState({
             stories: stories_EN
         });
@@ -38,10 +37,11 @@ export default class App extends React.Component {
     }
 
     /*
-        skapa en method handleStoriesList och skicka den genom porten till Flags_menu komponent,
-        inparameter kommer att blir din stories
-        och sedan do sätter värdet för this.state.stories till den storie som har kommit
+   skapa en method handleStoriesList och skicka den genom porten till Flags_menu komponent,
+    inparameter kommer att blir stories
+     och sedan  sätter värdet för this.state.stories till den storie som har kommit
     */
+
     handleStoriesList(stories) {
         this.setState({
             stories: stories
@@ -63,17 +63,16 @@ export default class App extends React.Component {
                                 {/*  <text>
                                     info text.. info text..<br/> info text.. info text..<br/></text>*/}
                             </div>
-                            {
-                                this.state.stories.map((key, index) =>
-                                    <li key={key}>
-                                        <Cat
-                                            name={key}
-                                            number={index+1}
-                                            actionButton={this.selectStories.bind(this)}
-                                            buttonColor={button[index]}
-                                        />
-                                    </li>
-                                )
+                            {this.state.stories.map((key, index) =>
+                                <li key={key}>
+                                    <Cat
+                                        name={key}
+                                        number={index + 1}
+                                        actionButton={this.selectStories.bind(this)}
+                                        buttonColor={button[index]}
+                                    />
+                                </li>
+                            )
                             }
                         </ul>
                     </div>

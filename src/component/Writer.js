@@ -1,6 +1,7 @@
 import React from 'react'
 import './style/writer.css'
 import Nik from '../images/background/Nik.png'
+import {Link} from "react-router-dom";
 
 
 export default class Writer extends React.Component {
@@ -9,7 +10,6 @@ export default class Writer extends React.Component {
         return (
             <div>
                 <br/><br/><br/><br/>
-
                 <div className="row">
                         <div className="card">
                             <div className="row no-gutters">
@@ -53,10 +53,16 @@ export default class Writer extends React.Component {
                             </div>
                         </div>
                     </div>
+                <div>
+                    <br/><br/>
+                    <Link to="/Cat">
+                        <button className="btn btn-primary">Back</button>
+                    </Link>
+                </div>
                     <br/><br/><br/><br/>
-                    <div className="card-footer w-100 text-muted">
+                  {/*  <div className="card-footer w-100 text-muted">
                         FOOTER
-                    </div>
+                    </div>*/}
             </div>
 
 

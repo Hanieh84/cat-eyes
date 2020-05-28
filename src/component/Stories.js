@@ -2,7 +2,6 @@ import React from 'react'
 import './style/stories.css'
 import {Form, TextArea} from 'semantic-ui-react'
 import Text_list from "./data/Text_list";
-import Popup from 'react-popup';
 import {Link} from "react-router-dom";
 import ReactAudioPlayer from 'react-audio-player';
 
@@ -68,6 +67,7 @@ export default class Stories extends React.Component {
                     <Form>
                         <TextArea id="text" value={this.state.text}/>
                     </Form>
+                    <br/>
                     <div>
                         <ReactAudioPlayer
                             className="audio"
@@ -78,9 +78,10 @@ export default class Stories extends React.Component {
                     </div>
                     <br/><br/>
                     <div>
-                        <a href="/Cat" className="btn btn-primary">Back</a>
+                        <Link to="/Cat">
+                            <button className="btn btn-primary">Back</button>
+                        </Link>
                     </div>
-
                     <br/><br/><br/><br/>
                     {/*FOOTER*/}
                     <div className="card-footer w-100 text-muted">
@@ -89,15 +90,11 @@ export default class Stories extends React.Component {
                 <Text_list
                     text_image={this.setTextImageToState.bind(this)}
                 />
-
             </div>
         )
     }
 
     getStoriesName(name) {
-        /*  if (name==''){
-             alert('error,please back to home page!')
-          }*/
         console.log('Name for stories:' + name);
         let list = this.state.text_image_sound;
 

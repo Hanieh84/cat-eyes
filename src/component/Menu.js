@@ -1,8 +1,8 @@
 import React from 'react'
 import "./style/menu.css";
-import {Route, Switch} from "react-router";
-import Cat from "../component/Cat"
 import {Link} from "react-router-dom";
+import logo from "../images/background/logo.png";
+
 
 export default class Menu extends React.Component {
     constructor(props) {
@@ -12,6 +12,9 @@ export default class Menu extends React.Component {
     render() {
         return (
             <div>
+                <div>
+                    <img className="logo" src={logo} alt="logo"></img>
+                </div>
                 <div className="row">
                     <div className="col-8">
                     </div>
