@@ -28,6 +28,14 @@ export default class App extends React.Component {
         this.setState({
             stories: stories_EN
         });
+        this.getDataFromDatabase();
+    }
+
+    getDataFromDatabase() {
+        fetch('http://localhost:4000/users')
+            .then(response => response.json())
+            .then(data =>
+                console.log(data));
     }
 
     selectStories(name) {
@@ -35,12 +43,6 @@ export default class App extends React.Component {
             storiesName: name
         })
     }
-
-    /*
-   skapa en method handleStoriesList och skicka den genom porten till Flags_menu komponent,
-    inparameter kommer att blir stories
-     och sedan  sätter värdet för this.state.stories till den storie som har kommit
-    */
 
     handleStoriesList(stories) {
         this.setState({

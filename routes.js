@@ -31,6 +31,7 @@ let connection = mysql.createPool({
     "database": userDatabase.toString(),
     "host": userHost.toString()
 });
+
 // Creating a GET route that returns data from the 'users' table.
 app.get('/users', function (req, res) {
 // Connecting to the database.
@@ -39,6 +40,7 @@ app.get('/users', function (req, res) {
         connection.query('SELECT * FROM like_stories', function (error, results, fields) {
             // If some error occurs, we throw an error.
             if (error) throw error;
+            res.header('Access-Control-Allow-Origin', '*');
             console.log(results);
             // Getting the 'response' from the database and sending it to our route. This is were the data is.
             res.send(results)
