@@ -66,3 +66,9 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Usage
+In the first step, open the terminal in the project and write npm install to install the React component after the write npm start to start both client and server.
+client open with port: http: // localhost: 3000 /
+server open with port: http: // localhost: 4000 / users
+and reads the table from the database

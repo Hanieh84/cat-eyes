@@ -53,8 +53,6 @@ export default class App extends React.Component {
     render() {
         const CatPage = () => {
             return (
-                //du skickar methoden som du skapate (handleStoriesList)
-                //vi har skrivit separat i <Flags_menu> för att undvika skriva 10 gånger för varje circle button
                 <div>
                     <div>
                         <Flags_menu
