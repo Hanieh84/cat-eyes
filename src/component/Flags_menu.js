@@ -100,7 +100,6 @@ export default class Flags_menu extends React.Component {
                         </div>
                     </div>
                 </div>
-
             </div>
         )
     }

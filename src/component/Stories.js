@@ -27,7 +27,7 @@ export default class Stories extends React.Component {
         this.state.text_image_sound = list
     }
 
-    readTextFile = inputText => {
+    readTextFile(inputText){
         const rawFile = new XMLHttpRequest();
         rawFile.open("GET", inputText, false);
         rawFile.onreadystatechange = () => {
@@ -99,11 +99,11 @@ export default class Stories extends React.Component {
         let list = this.state.text_image_sound;
 
         for (const [index, value] of list.entries()) {
-            if (value[name] != undefined) {
+            if (value[name] !== undefined) {
                 let valueText = value[name].text;
                 let valueImage = value[name].image;
                 let valueSound = value[name].sound;
-                console.log(valueSound)
+                console.log(valueSound);
                 this.readTextFile(valueText);
                 this.readImageFile(valueImage);
                 this.readSoundFile(valueSound);

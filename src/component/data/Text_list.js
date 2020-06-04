@@ -244,7 +244,6 @@ export default class Text_list extends React.Component {
                     image: CATS_EYES_Image_one,
                     sound: CONNECTED_TO_CATS_EYES_BRACELET_EN_SOUND
                 }
-
             },
             {
                 'Cómo obtuvo el gato silvestre sus ojos': {
@@ -252,7 +251,6 @@ export default class Text_list extends React.Component {
                     image: CATS_EYES_Image_one,
                     sound: CONNECTED_TO_CATS_EYES_BRACELET_ES_SOUND
                 }
-
             },
             {
                 'چگونه گربه وحشی چشمانش را پیدا کرد': {
