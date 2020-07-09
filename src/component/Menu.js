@@ -31,10 +31,13 @@ export default class Menu extends React.Component {
                                     <button className="dropdown-item">Home</button>
                                 </Link>
                                 <Link to="/Cat">
-                                    <button className="dropdown-item">Cat</button>
+                                    <button className="dropdown-item">Tales</button>
                                 </Link>
                                 <Link to="/Writer">
                                     <button className="dropdown-item">Writer</button>
+                                </Link>
+                                <Link to="/Bracelet">
+                                    <button className="dropdown-item">Bracelet</button>
                                 </Link>
                             </div>
                         </div>

@@ -14,7 +14,6 @@ var fs = require('fs'),
 
 var FILE = path.join(__dirname, './src/Files/User.xml');
 
-// pass a buffer or a path to a xml file
 xmlReader.parseString(fs.readFileSync(FILE), function(err, data) {
     userName = data.Library.user;
     userPassword = data.Library.password;
@@ -22,7 +21,6 @@ xmlReader.parseString(fs.readFileSync(FILE), function(err, data) {
     userDatabase = data.Library.database;
 });
 
-// Starting our app.
 const app = express();
 
 let connection = mysql.createPool({
@@ -32,23 +30,16 @@ let connection = mysql.createPool({
     "host": userHost.toString()
 });
 
-// Creating a GET route that returns data from the 'users' table.
 app.get('/users', function (req, res) {
-// Connecting to the database.
     connection.getConnection(function (err, connection) {
-        // Executing the MySQL query (select all data from the 'users' table).
         connection.query('SELECT * FROM like_stories', function (error, results, fields) {
-            // If some error occurs, we throw an error.
             if (error) throw error;
             res.header('Access-Control-Allow-Origin', '*');
-            console.log(results);
-            // Getting the 'response' from the database and sending it to our route. This is were the data is.
             res.send(results)
         });
     });
 });
 
-// Starting our server.
 app.listen(4000, () => {
     console.log('Go to http://localhost:4000/users so you can see the data.');
 });

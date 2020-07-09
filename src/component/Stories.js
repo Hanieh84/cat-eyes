@@ -72,7 +72,6 @@ export default class Stories extends React.Component {
                         <ReactAudioPlayer
                             className="audio"
                             src={this.state.sound}
-                            autoPlay
                             controls
                         />
                     </div>

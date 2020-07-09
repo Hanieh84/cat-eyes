@@ -24,6 +24,7 @@ export default class Cat extends React.Component {
                             onClick={(e) => this.handleCreate(e, this.props.name)}
                     >{this.props.number} {this.props.name}</button>
                 </Link>
+                <br/><br/><br/>
             </div>
         )
     }

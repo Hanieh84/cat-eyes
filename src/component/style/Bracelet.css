@@ -1,0 +1,32 @@
+#write{
+    background-color: black;
+}
+.textNik {
+    font-style: oblique;
+    color: white;
+    font-size: 16px;
+}
+
+.card-body{
+    background-color: black;;
+}
+.card-text:last-child{
+    color: black;
+    background-color: white;
+    border: 4px solid #007bff;
+    padding: 15px;
+
+}
+
+#bracelet{
+    width: 230px;
+    height: 150px;
+    margin-left:200px;
+    margin-top: 10px;
+}
+#bracelet1{
+    width: 230px;
+    height: 150px;
+
+
+}
